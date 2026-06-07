@@ -23,7 +23,7 @@ export default function Nav() {
         </span>
       </Link>
 
-      <nav className="flex items-center text-[1.1rem] md:text-[1.2rem] tracking-[0.1em]">
+      <nav className="flex items-center text-[0.77rem] md:text-[0.84rem] tracking-[0.1em]">
         {NAV_LINKS.map((link) => (
           <span key={link.href} className="flex items-center">
             <span className="text-[#2222FF] px-1.5 select-none">•</span>
