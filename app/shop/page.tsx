@@ -13,14 +13,6 @@ export const metadata: Metadata = {
 export default function ShopPage() {
   return (
     <main className="pt-[70px]">
-      {/* Page title */}
-      <div className="px-5 md:px-10 pt-10 pb-8">
-        <h1 className="text-[2.8rem] md:text-[4rem] leading-none tracking-tight">
-          <span className="font-black text-[#0A0A0A]">YET:</span>
-          <span className="font-thin text-[#888]"> SHOP</span>
-        </h1>
-      </div>
-
       {/* Product grid with blue borders */}
       <div className="border-t border-l border-[#2222FF]">
         <div className="grid grid-cols-1 md:grid-cols-3">
