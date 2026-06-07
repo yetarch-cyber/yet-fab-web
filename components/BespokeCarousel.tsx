@@ -25,7 +25,7 @@ export default function BespokeCarousel() {
   useEffect(() => {
     const t = setInterval(() => {
       setCurrent((c) => (c + 1) % SLIDES.length);
-    }, 1200);
+    }, 600);
     return () => clearInterval(t);
   }, []);
 
@@ -37,7 +37,7 @@ export default function BespokeCarousel() {
           className="absolute inset-0"
           style={{
             opacity: i === current ? 1 : 0,
-            transition: "opacity 150ms ease",
+            transition: "opacity 80ms ease",
             zIndex: i === current ? 10 : 0,
           }}
         >
