@@ -40,7 +40,7 @@ export const products: Product[] = [
     type: "Table lamp",
     description:
       "Compact table lamp with a perforated mineral-like shell. Organic form, warm presence.",
-    image: "/images/shop/250829_YET_Lamp_0086_ik_F.jpg",
+    image: "/images/shop/YET_10_2 (1) copy.jpg",
     shopUrl: "#",
   },
   {
