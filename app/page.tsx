@@ -89,7 +89,7 @@ export default function Home() {
       </section>
 
       {/* VIEW AND SHOP button */}
-      <div className="flex justify-center py-8">
+      <div className="flex justify-center py-[50px]">
         <Link
           href="/shop"
           className="bg-[#2222FF] text-white text-[0.7rem] tracking-[0.18em] uppercase px-10 py-3 rounded-full hover:opacity-90 transition-opacity"
