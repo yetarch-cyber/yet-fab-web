@@ -51,7 +51,7 @@ export const products: Product[] = [
     type: "Floor lamp",
     description:
       "3D-printed floor lamp with organic perforated structure. Warm light filters through the latticed shell.",
-    image: "/images/shop/250829_YET_Lamp_0170_ik_F square.jpg",
+    image: "/images/shop/250829_YET_Lamp_0144_ik_F.jpg",
     shopUrl: "#",
   },
   {
