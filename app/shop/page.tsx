@@ -16,7 +16,7 @@ export default function ShopPage() {
       {/* Product grid — 4 columns, vertical images */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-[10px] px-5 md:px-[100px] py-[10px]">
         {products.map((product) => (
-          <div key={product.id} className="flex flex-col">
+          <div key={product.id} className="flex flex-col border border-[#2222FF]">
             {/* Vertical image */}
             <div className="relative overflow-hidden" style={{ aspectRatio: "3/4" }}>
               <Img
