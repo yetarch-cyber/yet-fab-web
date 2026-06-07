@@ -22,13 +22,13 @@ export default function HeroCarousel() {
       if (locked) return;
       setLocked(true);
       setCurrent(((idx % total) + total) % total);
-      setTimeout(() => setLocked(false), 700);
+      setTimeout(() => setLocked(false), 300);
     },
     [locked, total]
   );
 
   useEffect(() => {
-    const t = setInterval(() => go(current + 1), 5000);
+    const t = setInterval(() => go(current + 1), 2500);
     return () => clearInterval(t);
   }, [current, go]);
 
@@ -37,7 +37,7 @@ export default function HeroCarousel() {
       {SLIDES.map((slide, i) => (
         <div
           key={slide.src}
-          className="absolute inset-0 transition-opacity duration-700"
+          className="absolute inset-0 transition-opacity duration-300"
           style={{ opacity: i === current ? 1 : 0, zIndex: i === current ? 10 : 0 }}
         >
           <Img
