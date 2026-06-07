@@ -54,7 +54,7 @@ export default function Home() {
       <Marquee />
 
       {/* 5-product row */}
-      <section className="grid grid-cols-2 md:grid-cols-5 gap-[10px] pt-[10px] pb-0 px-5 md:px-[100px]">
+      <section className="grid grid-cols-2 md:grid-cols-5 gap-[10px] pt-[10px] pb-[10px] px-5 md:px-[100px]">
         {SHOP_PREVIEW.map((item, idx) => (
           <Link
             key={idx}
