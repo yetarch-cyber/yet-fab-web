@@ -14,6 +14,7 @@ export default function ShopPage() {
   return (
     <main className="pt-[70px]">
       {/* Collapsed blue grid — outer left+top, each cell right+bottom */}
+      <div className="px-5 md:px-[100px]">
       <div className="border-t border-l border-[#2222FF]">
         <div className="grid grid-cols-2 md:grid-cols-4">
           {products.map((product) => (
@@ -52,6 +53,7 @@ export default function ShopPage() {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </main>
   );
