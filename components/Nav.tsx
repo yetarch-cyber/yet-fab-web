@@ -13,7 +13,7 @@ export default function Nav() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 flex items-center justify-between px-5 md:px-10 py-4 bg-[#EDEDEB]/95 backdrop-blur-sm border-b border-[#DCDAD5]">
+    <header className="sticky top-0 z-50 flex items-center justify-between px-5 md:px-10 py-4 bg-transparent">
       <Link href="/" className="leading-none">
         <span className="font-black text-[1.5rem] md:text-[1.75rem] tracking-tight text-[#0A0A0A]">
           YET:
