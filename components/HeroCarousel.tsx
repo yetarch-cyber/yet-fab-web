@@ -3,30 +3,13 @@ import { useState, useEffect, useCallback } from "react";
 import Img from "./Img";
 
 const SLIDES = [
-  {
-    src: "/images/hero/slide-1.jpg",
-    alt: "ALHERD mirror stand with organic 3D-printed blue base — YET:FAB",
-    label: "ALHERD",
-    sub: "Mirror stand",
-  },
-  {
-    src: "/images/hero/slide-2.jpg",
-    alt: "BAKLAN table lamp — YET:FAB",
-    label: "BAKLAN",
-    sub: "Table lamp",
-  },
-  {
-    src: "/images/hero/slide-3.jpg",
-    alt: "THICK candleholder — YET:FAB",
-    label: "THICK",
-    sub: "Candleholder",
-  },
-  {
-    src: "/images/hero/slide-4.jpg",
-    alt: "PARASITE X IKEA — YET:FAB",
-    label: "PARASITE",
-    sub: "X IKEA",
-  },
+  { src: "/images/hero/241005_YET_0058_ik copy.jpg", alt: "YET:FAB product — digital fabrication studio Tel Aviv" },
+  { src: "/images/hero/241005_YET_0114_ik copy.jpg", alt: "YET:FAB 3D-printed object — Tel Aviv design studio" },
+  { src: "/images/hero/241005_YET_0176_ik copy.jpg", alt: "YET:FAB experimental fabrication — bespoke objects" },
+  { src: "/images/hero/250829_YET_Lamp_0162_ik_F.jpg", alt: "YET:FAB lamp — ALHERD lighting collection" },
+  { src: "/images/hero/250829_YET_Lamp_0170_ik_F.jpg", alt: "YET:FAB lamp — 3D printed lighting design" },
+  { src: "/images/hero/250829_YET_Lamp_0244_ik_F.jpg", alt: "YET:FAB lamp — sustainable digital fabrication" },
+  { src: "/images/hero/4.jpg", alt: "YET:FAB — experimental objects and architectural components" },
 ];
 
 export default function HeroCarousel() {
