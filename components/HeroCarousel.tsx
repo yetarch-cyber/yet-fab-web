@@ -33,60 +33,66 @@ export default function HeroCarousel() {
   }, [current, go]);
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#EDEDEB]" style={{ height: "calc(100svh - 65px)" }}>
-      {SLIDES.map((slide, i) => (
-        <div
-          key={slide.src}
-          className="absolute inset-0 transition-opacity duration-700"
-          style={{ opacity: i === current ? 1 : 0, zIndex: i === current ? 10 : 0 }}
-        >
-          <Img
-            src={slide.src}
-            alt={slide.alt}
-            fill
-            className="object-contain"
-            priority={i === 0}
-            sizes="100vw"
-          />
-        </div>
-      ))}
-
-      {/* Prev arrow */}
-      <button
-        onClick={() => go(current - 1)}
-        aria-label="Previous"
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full border border-[#0A0A0A] flex items-center justify-center text-lg hover:bg-[#0A0A0A] hover:text-white transition-colors"
+    <section className="relative w-full bg-[#EDEDEB] flex justify-center items-start overflow-hidden">
+      {/* 9:16 portrait frame — centered, full height on mobile, capped on desktop */}
+      <div
+        className="relative w-full"
+        style={{ aspectRatio: "9/16", maxHeight: "92svh", maxWidth: "calc(92svh * 9 / 16)" }}
       >
-        ‹
-      </button>
-
-      {/* Next arrow */}
-      <button
-        onClick={() => go(current + 1)}
-        aria-label="Next"
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full border border-[#0A0A0A] flex items-center justify-center text-lg hover:bg-[#0A0A0A] hover:text-white transition-colors"
-      >
-        ›
-      </button>
-
-      {/* Dots */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex gap-2">
-        {SLIDES.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => go(i)}
-            aria-label={`Go to slide ${i + 1}`}
-            className="w-1.5 h-1.5 rounded-full transition-colors"
-            style={{ background: i === current ? "#2222FF" : "#AAAAAA" }}
-          />
+        {SLIDES.map((slide, i) => (
+          <div
+            key={slide.src}
+            className="absolute inset-0 transition-opacity duration-700"
+            style={{ opacity: i === current ? 1 : 0, zIndex: i === current ? 10 : 0 }}
+          >
+            <Img
+              src={slide.src}
+              alt={slide.alt}
+              fill
+              className="object-cover"
+              priority={i === 0}
+              sizes="(max-width: 768px) 100vw, 52svh"
+            />
+          </div>
         ))}
-      </div>
 
-      {/* Scroll down */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 text-center">
-        <p className="text-[0.55rem] tracking-[0.2em] text-[#888] uppercase">
-          scroll down ↓
-        </p>
+        {/* Prev arrow */}
+        <button
+          onClick={() => go(current - 1)}
+          aria-label="Previous"
+          className="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full border border-[#0A0A0A] flex items-center justify-center text-lg hover:bg-[#0A0A0A] hover:text-white transition-colors bg-[#EDEDEB]/60 backdrop-blur-sm"
+        >
+          ‹
+        </button>
+
+        {/* Next arrow */}
+        <button
+          onClick={() => go(current + 1)}
+          aria-label="Next"
+          className="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full border border-[#0A0A0A] flex items-center justify-center text-lg hover:bg-[#0A0A0A] hover:text-white transition-colors bg-[#EDEDEB]/60 backdrop-blur-sm"
+        >
+          ›
+        </button>
+
+        {/* Dots */}
+        <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+          {SLIDES.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => go(i)}
+              aria-label={`Go to slide ${i + 1}`}
+              className="w-1.5 h-1.5 rounded-full transition-colors"
+              style={{ background: i === current ? "#2222FF" : "#AAAAAA" }}
+            />
+          ))}
+        </div>
+
+        {/* Scroll down */}
+        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 z-20 text-center">
+          <p className="text-[0.55rem] tracking-[0.2em] text-[#888] uppercase">
+            scroll down ↓
+          </p>
+        </div>
       </div>
     </section>
   );
