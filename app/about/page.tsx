@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="pt-[70px]">
+    <main>
       <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
         {/* Text column */}
-        <div className="px-5 md:px-10 pt-10 pb-16">
+        <div className="px-5 md:px-10 pt-[90px] pb-16">
           <div className="flex flex-col gap-8 max-w-md">
             <p className="text-[0.75rem] leading-[2] text-[#0A0A0A]">
               At YET Architecture, we are an experimental practice dedicated to
