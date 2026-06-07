@@ -34,7 +34,7 @@ export default function ShopPage() {
               </div>
 
               {/* Info */}
-              <div className="flex flex-col items-center gap-3 py-5 px-4 text-center">
+              <div className="flex flex-col items-center gap-[50px] py-5 px-4 text-center">
                 <p className="text-[0.62rem] tracking-[0.06em]">
                   {product.prefix && (
                     <span className="text-[#888]">{product.prefix} </span>
