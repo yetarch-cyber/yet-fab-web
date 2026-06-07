@@ -70,7 +70,7 @@ export default function HeroCarousel() {
       </button>
 
       {/* Dots */}
-      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+      <div className="absolute bottom-[50px] left-1/2 -translate-x-1/2 z-20 flex gap-2">
         {SLIDES.map((_, i) => (
           <button
             key={i}
@@ -84,7 +84,7 @@ export default function HeroCarousel() {
 
       {/* Scroll down */}
       <div className="absolute bottom-2 left-1/2 -translate-x-1/2 z-20 text-center">
-        <p className="text-[0.55rem] tracking-[0.2em] text-white/70 uppercase">
+        <p className="text-[1.1rem] tracking-[0.2em] text-white/70 uppercase">
           scroll down ↓
         </p>
       </div>
