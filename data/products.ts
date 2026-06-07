@@ -11,25 +11,14 @@ export type Product = {
 
 export const products: Product[] = [
   {
-    id: "alherd-mirror",
-    name: "ALHERD",
-    prefix: "Mirror stand",
-    displayName: '"ALHERD"',
-    type: "Mirror stand",
+    id: "parasite",
+    name: "PARASITE",
+    prefix: "",
+    displayName: "PARASITE",
+    type: "PARASITE",
     description:
-      "Organic 3D-printed base supporting a polished mirror. Blue textured form, architectural presence.",
+      "Organic 3D-printed sculptural object. Experimental form that inhabits and transforms its surroundings.",
     image: "/images/shop/241005_YET_0058_ik copy.jpg",
-    shopUrl: "#",
-  },
-  {
-    id: "alherd-table",
-    name: "ALHERD",
-    prefix: "Table lamp",
-    displayName: '"ALHERD"',
-    type: "Table lamp",
-    description:
-      "Compact table lamp with a perforated mineral-like shell. Organic form, warm presence.",
-    image: "/images/shop/YET_10_2 (1) copy.jpg",
     shopUrl: "#",
   },
   {
@@ -52,6 +41,17 @@ export const products: Product[] = [
     description:
       "Horizontally oriented pendant with a textured lattice form. A continuous, otherworldly surface of light.",
     image: "/images/shop/250829_YET_Lamp_0244_ik_F.jpg",
+    shopUrl: "#",
+  },
+  {
+    id: "alherd-table",
+    name: "ALHERD",
+    prefix: "Table lamp",
+    displayName: '"ALHERD"',
+    type: "Table lamp",
+    description:
+      "Compact table lamp with a perforated mineral-like shell. Organic form, warm presence.",
+    image: "/images/shop/YET_10_2 (1) copy.jpg",
     shopUrl: "#",
   },
   {
