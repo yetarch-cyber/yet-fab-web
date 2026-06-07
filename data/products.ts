@@ -18,7 +18,7 @@ export const products: Product[] = [
     type: "PARASITE",
     description:
       "Organic 3D-printed sculptural object. Experimental form that inhabits and transforms its surroundings.",
-    image: "/images/shop/241005_YET_0058_ik copy.jpg",
+    image: "/images/shop/241005_YET_0129_ik copy.jpg",
     shopUrl: "#",
   },
   {
@@ -40,7 +40,7 @@ export const products: Product[] = [
     type: "Table lamp",
     description:
       "Compact table lamp with a perforated mineral-like shell. Organic form, warm presence.",
-    image: "/images/shop/250829_YET_Lamp_0231_ik_F.jpg",
+    image: "/images/shop/250829_YET_Lamp_0086_ik_F.jpg",
     shopUrl: "#",
   },
   {
