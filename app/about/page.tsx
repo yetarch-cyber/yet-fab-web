@@ -14,11 +14,6 @@ export default function AboutPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
         {/* Text column */}
         <div className="px-5 md:px-10 pt-10 pb-16">
-          <h1 className="text-[1.6rem] md:text-[2rem] leading-none tracking-tight mb-12">
-            <span className="font-black text-[#0A0A0A]">YET:</span>
-            <span className="font-thin text-[#888]"> ABOUT</span>
-          </h1>
-
           <div className="flex flex-col gap-8 max-w-md">
             <p className="text-[0.75rem] leading-[2] text-[#0A0A0A]">
               At YET Architecture, we are an experimental practice dedicated to
@@ -59,9 +54,9 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Images column */}
+        {/* Images column — 20% bigger */}
         <div className="flex flex-col">
-          <div className="relative flex-1" style={{ minHeight: "50vh" }}>
+          <div className="relative flex-1" style={{ minHeight: "60vh" }}>
             <Img
               src="/images/about/ADA_YET_3.jpg"
               alt="YET:FAB team — fabrication studio in Tel Aviv"
@@ -71,7 +66,7 @@ export default function AboutPage() {
               priority
             />
           </div>
-          <div className="relative flex-1" style={{ minHeight: "50vh" }}>
+          <div className="relative flex-1" style={{ minHeight: "60vh" }}>
             <Img
               src="/images/about/ADA_YET_5.jpg"
               alt="Anastasiya and Ilya Kotler — YET Architecture founders"
@@ -82,7 +77,6 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-
     </main>
   );
 }
