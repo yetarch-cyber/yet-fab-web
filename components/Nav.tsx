@@ -15,15 +15,15 @@ export default function Nav() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-5 md:px-10 py-4 bg-transparent">
       <Link href="/" className="leading-none">
-        <span className="font-black text-[1.5rem] md:text-[1.75rem] tracking-tight text-[#0A0A0A]">
+        <span className="font-black text-[3rem] md:text-[3.5rem] tracking-tight text-[#0A0A0A]">
           YET:
         </span>
-        <span className="font-thin text-[1.5rem] md:text-[1.75rem] tracking-tight text-[#2222FF]">
+        <span className="font-thin text-[3rem] md:text-[3.5rem] tracking-tight text-[#2222FF]">
           {" "}FAB
         </span>
       </Link>
 
-      <nav className="flex items-center text-[0.58rem] md:text-[0.62rem] tracking-[0.14em]">
+      <nav className="flex items-center text-[1.1rem] md:text-[1.2rem] tracking-[0.1em]">
         {NAV_LINKS.map((link) => (
           <span key={link.href} className="flex items-center">
             <span className="text-[#2222FF] px-1.5 select-none">•</span>
