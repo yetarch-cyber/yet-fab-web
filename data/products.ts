@@ -11,17 +11,6 @@ export type Product = {
 
 export const products: Product[] = [
   {
-    id: "thick",
-    name: "THICK",
-    prefix: "Candleholder",
-    displayName: '"THICK"',
-    type: "Candleholder",
-    description:
-      "Structural lattice candleholder. Bold, architectural form in matte white ceramic-finish resin.",
-    image: "/images/shop/240523_candleholder_0085_ik_F.jpg",
-    shopUrl: "#",
-  },
-  {
     id: "alherd-mirror",
     name: "ALHERD",
     prefix: "Mirror stand",
@@ -96,6 +85,17 @@ export const products: Product[] = [
     description:
       "Layered translucent 3D-printed shade with a cone silhouette and warm amber glow.",
     image: "/images/shop/Firefly_Gemini Flash_here is images of 3d printed lamp. outer translucent layer with thick plastic layers  881560.png",
+    shopUrl: "#",
+  },
+  {
+    id: "thick",
+    name: "THICK",
+    prefix: "Candleholder",
+    displayName: '"THICK"',
+    type: "Candleholder",
+    description:
+      "Structural lattice candleholder. Bold, architectural form in matte white ceramic-finish resin.",
+    image: "/images/shop/240523_candleholder_0085_ik_F.jpg",
     shopUrl: "#",
   },
 ];
