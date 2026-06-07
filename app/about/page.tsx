@@ -63,7 +63,7 @@ export default function AboutPage() {
         <div className="flex flex-col">
           <div className="relative flex-1" style={{ minHeight: "50vh" }}>
             <Img
-              src="/images/about/team-1.jpg"
+              src="/images/about/ADA_YET_3.jpg"
               alt="YET:FAB team — fabrication studio in Tel Aviv"
               fill
               className="object-cover"
@@ -73,7 +73,7 @@ export default function AboutPage() {
           </div>
           <div className="relative flex-1" style={{ minHeight: "50vh" }}>
             <Img
-              src="/images/about/team-2.jpg"
+              src="/images/about/ADA_YET_5.jpg"
               alt="Anastasiya and Ilya Kotler — YET Architecture founders"
               fill
               className="object-cover"
