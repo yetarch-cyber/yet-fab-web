@@ -22,25 +22,14 @@ export const products: Product[] = [
     shopUrl: "#",
   },
   {
-    id: "alherd-floor",
-    name: "ALHERD",
-    prefix: "Floor lamp",
-    displayName: '"ALHERD"',
-    type: "Floor lamp",
-    description:
-      "3D-printed floor lamp with organic perforated structure. Warm light filters through the latticed shell.",
-    image: "/images/shop/250829_YET_Lamp_0144_ik_F.jpg",
-    shopUrl: "#",
-  },
-  {
     id: "alherd-pendant",
     name: "ALHERD",
     prefix: "Pendant lamp",
     displayName: '"ALHERD"',
     type: "Pendant lamp",
     description:
-      "Horizontally oriented pendant with a textured lattice form. A continuous, otherworldly surface of light.",
-    image: "/images/shop/250829_YET_Lamp_0244_ik_F.jpg",
+      "Organic pendant lamp with a sculptural translucent shell. Warm diffused light through a flowing form.",
+    image: "/images/shop/250829_YET_Lamp_0144_ik_F.jpg",
     shopUrl: "#",
   },
   {
@@ -51,6 +40,17 @@ export const products: Product[] = [
     type: "Table lamp",
     description:
       "Compact table lamp with a perforated mineral-like shell. Organic form, warm presence.",
+    image: "/images/shop/250829_YET_Lamp_0244_ik_F.jpg",
+    shopUrl: "#",
+  },
+  {
+    id: "alherd-floor",
+    name: "ALHERD",
+    prefix: "Floor lamp",
+    displayName: '"ALHERD"',
+    type: "Floor lamp",
+    description:
+      "3D-printed floor lamp with organic perforated structure. Warm light filters through the latticed shell.",
     image: "/images/shop/YET_10_2 (1) copy.jpg",
     shopUrl: "#",
   },
