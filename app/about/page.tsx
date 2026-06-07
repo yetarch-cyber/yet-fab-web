@@ -14,7 +14,7 @@ export default function AboutPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
         {/* Text column */}
         <div className="px-5 md:px-10 pt-10 pb-16">
-          <h1 className="text-[2.8rem] md:text-[4rem] leading-none tracking-tight mb-12">
+          <h1 className="text-[1.6rem] md:text-[2rem] leading-none tracking-tight mb-12">
             <span className="font-black text-[#0A0A0A]">YET:</span>
             <span className="font-thin text-[#888]"> ABOUT</span>
           </h1>
