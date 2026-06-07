@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import HeroCarousel from "@/components/HeroCarousel";
+import BespokeCarousel from "@/components/BespokeCarousel";
 import Marquee from "@/components/Marquee";
 import Img from "@/components/Img";
 
@@ -68,28 +69,8 @@ export default function Home() {
         ))}
       </section>
 
-      {/* Services CTA — full-width image */}
-      <section className="relative w-full" style={{ aspectRatio: "16/7" }}>
-        <Img
-          src="/images/services/fabrication.jpg"
-          alt="YET:FAB digital fabrication — bespoke components in production"
-          fill
-          className="object-cover"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-[#0A0A0A]/10" />
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10">
-          <p className="text-[0.52rem] tracking-[0.22em] text-white/80 uppercase">
-            Digital Fabrication
-          </p>
-          <Link
-            href="/services"
-            className="bg-[#2222FF] text-white text-[0.6rem] tracking-[0.16em] uppercase px-8 py-2.5 rounded-full hover:opacity-90 transition-opacity"
-          >
-            SERVICES
-          </Link>
-        </div>
-      </section>
+      {/* Bespoke services carousel */}
+      <BespokeCarousel />
     </>
   );
 }
