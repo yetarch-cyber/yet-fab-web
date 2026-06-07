@@ -119,10 +119,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Blue diamond separator */}
-      <div className="flex justify-center py-10">
-        <span className="text-[#2222FF] text-2xl select-none">◆</span>
-      </div>
     </>
   );
 }

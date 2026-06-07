@@ -77,10 +77,6 @@ export default function ServicesPage() {
         ))}
       </div>
 
-      {/* Blue diamond */}
-      <div className="flex justify-center py-6">
-        <span className="text-[#2222FF] text-2xl select-none">◆</span>
-      </div>
     </main>
   );
 }

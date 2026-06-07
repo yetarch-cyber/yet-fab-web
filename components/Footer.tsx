@@ -30,8 +30,6 @@ export default function Footer() {
           </svg>
         </Link>
 
-        <span className="text-[#2222FF] text-xl select-none">◆</span>
-
         <Link
           href="https://www.linkedin.com/company/yet-fab/"
           target="_blank"

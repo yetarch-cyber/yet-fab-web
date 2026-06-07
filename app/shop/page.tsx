@@ -62,10 +62,6 @@ export default function ShopPage() {
         </div>
       </div>
 
-      {/* Blue diamond */}
-      <div className="flex justify-center py-10">
-        <span className="text-[#2222FF] text-2xl select-none">◆</span>
-      </div>
     </main>
   );
 }
