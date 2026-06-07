@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function ShopPage() {
   return (
-    <main>
+    <main className="pt-[70px]">
       {/* Page title */}
       <div className="px-5 md:px-10 pt-10 pb-8">
         <h1 className="text-[2.8rem] md:text-[4rem] leading-none tracking-tight">

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-[70px]">
       {/* Mobile: stacked. Desktop: side-by-side */}
       <div className="flex flex-col md:flex-row min-h-[calc(100svh-65px)]">
         {/* Image side */}

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   return (
-    <main className="px-5 md:px-10">
+    <main className="px-5 md:px-10 pt-[70px]">
       {/* Page title */}
       <div className="pt-10 pb-2">
         <h1 className="text-[2.8rem] md:text-[4rem] leading-none tracking-tight">

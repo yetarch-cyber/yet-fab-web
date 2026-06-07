@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main>
+    <main className="pt-[70px]">
       <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
         {/* Text column */}
         <div className="px-5 md:px-10 pt-10 pb-16">
