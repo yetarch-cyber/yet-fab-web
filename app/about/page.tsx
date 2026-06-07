@@ -13,7 +13,7 @@ export default function AboutPage() {
     <main>
       <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
         {/* Text column */}
-        <div className="px-5 md:px-10 pt-[90px] pb-16">
+        <div className="pl-5 md:pl-[200px] pr-5 md:pr-10 pt-[290px] pb-16">
           <div className="flex flex-col gap-8 max-w-md">
             <p className="text-[0.75rem] leading-[2] text-[#0A0A0A]">
               At YET Architecture, we are an experimental practice dedicated to
