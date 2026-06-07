@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function ShopPage() {
   return (
-    <main className="pt-[120px]">
+    <main className="pt-[90px]">
       {/* Collapsed blue grid — outer left+top, each cell right+bottom */}
       <div className="px-5 md:px-[100px]">
       <div className="border-t border-l border-[#2222FF]">
