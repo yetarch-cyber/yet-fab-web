@@ -20,9 +20,9 @@ const SHOP_PREVIEW = [
   },
   {
     src: "/images/shop-preview/241005_YET_0129_ik copy.jpg",
-    alt: "ALHERD mirror stand — YET:FAB",
-    name: "ALHERD",
-    sub: "Mirror stand",
+    alt: "PARASITE — YET:FAB artistic object",
+    name: "PARASITE",
+    sub: "Artistic object",
   },
   {
     src: "/images/shop-preview/250829_YET_Lamp_0144_ik_F.jpg",
@@ -38,9 +38,9 @@ const SHOP_PREVIEW = [
   },
   {
     src: "/images/shop-preview/Firefly_Gemini Flash (2).png",
-    alt: "YET:FAB experimental object",
-    name: "BAKLAN",
-    sub: "Table lamp",
+    alt: "RAMKOL speaker — YET:FAB",
+    name: "RAMKOL",
+    sub: "Speaker",
   },
 ];
 
@@ -54,7 +54,7 @@ export default function Home() {
       <Marquee />
 
       {/* 5-product row */}
-      <section className="grid grid-cols-2 md:grid-cols-5 gap-[10px] p-[10px]">
+      <section className="grid grid-cols-2 md:grid-cols-5 gap-[10px] py-[10px] px-5 md:px-[100px]">
         {SHOP_PREVIEW.map((item, idx) => (
           <Link
             key={idx}
@@ -78,7 +78,7 @@ export default function Home() {
               </div>
             </div>
             {/* Name */}
-            <div className="pt-2 pb-1 text-center">
+            <div className="pt-2 text-center">
               <p className="text-[0.62rem] tracking-[0.08em] text-[#888]">
                 {item.sub}{" "}
                 <span className="font-bold text-[#0A0A0A]">&ldquo;{item.name}&rdquo;</span>
