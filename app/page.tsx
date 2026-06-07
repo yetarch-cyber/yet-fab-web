@@ -3,7 +3,6 @@ import Link from "next/link";
 import HeroCarousel from "@/components/HeroCarousel";
 import Marquee from "@/components/Marquee";
 import Img from "@/components/Img";
-import { products } from "@/data/products";
 
 export const metadata: Metadata = {
   title:
@@ -11,9 +10,30 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.yetfab.com" },
 };
 
-export default function Home() {
-  const featured = products.slice(0, 3);
+const SHOP_PREVIEW = [
+  {
+    src: "/images/shop-preview/240523_candleholder_0095_ik_F.jpg",
+    alt: "THICK candleholder — YET:FAB",
+  },
+  {
+    src: "/images/shop-preview/241005_YET_0129_ik copy.jpg",
+    alt: "YET:FAB 3D-printed object",
+  },
+  {
+    src: "/images/shop-preview/250829_YET_Lamp_0144_ik_F.jpg",
+    alt: "YET:FAB lamp — ALHERD lighting",
+  },
+  {
+    src: "/images/shop-preview/250829_YET_Lamp_0184_ik_F.jpg",
+    alt: "YET:FAB lamp — 3D printed design",
+  },
+  {
+    src: "/images/shop-preview/Firefly_Gemini Flash (2).png",
+    alt: "YET:FAB experimental object",
+  },
+];
 
+export default function Home() {
   return (
     <>
       {/* Hero */}
@@ -22,78 +42,30 @@ export default function Home() {
       {/* Marquee */}
       <Marquee />
 
-      {/* Featured Products Grid */}
-      <section className="grid grid-cols-1 md:grid-cols-3 border-t border-[#2222FF]">
-        {featured.map((product, idx) => (
-          <div
-            key={product.id}
-            className={`relative border-b border-[#2222FF] ${
-              idx > 0 ? "md:border-l" : ""
-            }`}
-            style={{ aspectRatio: "4/3" }}
+      {/* 5-product row */}
+      <section className="grid grid-cols-2 md:grid-cols-5">
+        {SHOP_PREVIEW.map((item, idx) => (
+          <Link
+            key={idx}
+            href="/shop"
+            className="relative group overflow-hidden block"
+            style={{ aspectRatio: "3/4" }}
           >
-            {/* Faded bg image */}
-            <div
-              className="absolute inset-0"
-              style={{ opacity: idx === 1 ? 0.35 : 1 }}
-            >
-              <Img
-                src={product.image}
-                alt={product.name}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 33vw"
-              />
-            </div>
-
-            {/* Center column CTA overlay */}
-            {idx === 1 && (
-              <div className="absolute inset-0 flex flex-col items-center justify-center z-10 gap-1">
-                <p className="text-[0.52rem] tracking-[0.22em] text-[#555] uppercase">
-                  YET:FAB
-                </p>
-                <p className="text-[0.52rem] tracking-[0.22em] text-[#555] uppercase">
-                  Furniture store
-                </p>
-                <Link
-                  href="/shop"
-                  className="mt-3 bg-[#2222FF] text-white text-[0.58rem] tracking-[0.16em] uppercase px-6 py-2 rounded-full hover:opacity-90 transition-opacity"
-                >
-                  VIEW AND SHOP
-                </Link>
-              </div>
-            )}
-          </div>
-        ))}
-      </section>
-
-      {/* Digital Fabrication intro */}
-      <section className="grid grid-cols-1 md:grid-cols-5 gap-8 px-5 md:px-16 py-16 items-start">
-        <div className="md:col-span-1 flex items-start justify-center md:justify-start">
-          <div className="relative w-28 h-28">
             <Img
-              src="/images/products/baklan-table.jpg"
-              alt="YET:FAB product detail"
+              src={item.src}
+              alt={item.alt}
               fill
-              className="object-contain"
-              sizes="112px"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              sizes="(max-width: 768px) 50vw, 20vw"
             />
-          </div>
-        </div>
-
-        <div className="md:col-span-4">
-          <p className="text-[0.58rem] tracking-[0.22em] text-[#888] uppercase mb-5">
-            Digital Fabrication x Circular Economy
-          </p>
-          <p className="text-[0.72rem] leading-[2] text-[#333] max-w-2xl">
-            We specialize in transforming ideas into reality, whether it&apos;s
-            prototypes, furniture, jewelry, or facades. Our goal is to empower
-            both individuals and businesses by offering the tools and expertise
-            needed to bring projects to life — from concept to completion.
-            Whether you seek assistance with design or need the right resources
-            for fabrication, we are here to support you.
-          </p>
-        </div>
+            {/* VIEW AND SHOP overlay on hover */}
+            <div className="absolute inset-0 bg-[#0A0A0A]/0 group-hover:bg-[#0A0A0A]/30 transition-all duration-300 flex items-end justify-center pb-6">
+              <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[#2222FF] text-white text-[0.55rem] tracking-[0.16em] uppercase px-5 py-2 rounded-full">
+                VIEW AND SHOP
+              </span>
+            </div>
+          </Link>
+        ))}
       </section>
 
       {/* Services CTA — full-width image */}
@@ -118,7 +90,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
     </>
   );
 }
