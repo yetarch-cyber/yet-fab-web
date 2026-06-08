@@ -13,14 +13,6 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <main className="px-5 md:px-10 pt-[70px]">
-      {/* Page title */}
-      <div className="pt-10 pb-2">
-        <h1 className="text-[2.8rem] md:text-[4rem] leading-none tracking-tight">
-          <span className="font-black text-[#0A0A0A]">YET:</span>
-          <span className="font-thin text-[#888]"> SERVICES</span>
-        </h1>
-      </div>
-
       {/* Subtitle */}
       <p className="text-[1.6rem] md:text-[2rem] font-thin text-[#888] mt-4 mb-6 leading-tight">
         Tailored to your needs
