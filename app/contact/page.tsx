@@ -1,130 +1,80 @@
-"use client";
 import type { Metadata } from "next";
-import { useState } from "react";
+import Link from "next/link";
+import ContactForm from "@/components/ContactForm";
 
-const INPUT_CLASS =
-  "w-full bg-transparent border border-[#2222FF] rounded-full px-6 py-4 text-[0.75rem] tracking-[0.1em] uppercase placeholder:text-[#AAAAAA] text-[#0A0A0A] outline-none focus:border-[#2222FF] transition-colors";
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Contact YET:FAB — Tel Aviv. studio@yetarchitecture.com · +972-58-629-7943",
+  alternates: { canonical: "https://www.yetfab.com/contact" },
+};
 
-const SELECT_OPTIONS = [
-  "3D PRINTING INQUIRY",
-  "BESPOKE FABRICATION",
-  "EXPERT CONSULTATION",
-  "SHOP / PURCHASE",
-  "OTHER",
-];
-
-export default function ContactPage() {
-  const [submitted, setSubmitted] = useState(false);
+export default function ContactPage({
+  searchParams,
+}: {
+  searchParams: { sent?: string };
+}) {
+  const sent = searchParams?.sent === "true";
 
   return (
-    <main className="min-h-screen pt-[70px] px-5 md:px-[100px] pb-20">
-      <div className="max-w-3xl mx-auto pt-16">
+    <main className="min-h-screen pt-[70px]">
+      <div className="grid grid-cols-1 md:grid-cols-2">
 
-        {submitted ? (
-          <div className="flex flex-col items-center justify-center py-32 gap-6">
-            <h2 className="text-[2rem] font-thin text-[#888] tracking-tight">
-              CONTACT US
-            </h2>
-            <p className="text-[0.75rem] tracking-[0.1em] text-[#888]">
-              And we will get back to you soon!
-            </p>
-          </div>
-        ) : (
-          <form
-            action="https://formsubmit.co/studio@yetarchitecture.com"
-            method="POST"
-            encType="multipart/form-data"
-            onSubmit={() => setTimeout(() => setSubmitted(true), 500)}
-            className="flex flex-col gap-4"
+        {/* Form column */}
+        <div className="px-5 md:px-14 pt-16 pb-20">
+          {sent ? (
+            <div className="flex flex-col items-center justify-center h-full py-32 gap-6">
+              <p className="text-[2rem] font-thin text-[#888] tracking-tight">Thank you!</p>
+              <p className="text-[0.75rem] tracking-[0.1em] text-[#888]">
+                We will get back to you soon.
+              </p>
+              <Link
+                href="/contact"
+                className="mt-4 bg-[#2222FF] text-white text-[0.62rem] tracking-[0.16em] uppercase px-8 py-3 rounded-full hover:opacity-90 transition-opacity"
+              >
+                SEND ANOTHER
+              </Link>
+            </div>
+          ) : (
+            <ContactForm />
+          )}
+        </div>
+
+        {/* Contact info column */}
+        <div className="px-5 md:px-14 pt-16 pb-20 flex flex-col gap-4 border-t md:border-t-0 md:border-l border-[#DCDAD5]">
+          <p className="text-[0.72rem] tracking-[0.06em] font-medium text-[#0A0A0A]">YET:FAB</p>
+          <p className="text-[0.72rem] leading-[1.8] text-[#0A0A0A]">Tel Aviv, Israel</p>
+          <Link
+            href="mailto:studio@yetarchitecture.com"
+            className="text-[0.72rem] leading-[1.8] text-[#0A0A0A] hover:text-[#2222FF] transition-colors"
           >
-            {/* Hidden config */}
-            <input type="hidden" name="_subject" value="YET:FAB — New Inquiry from Website" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_next" value="https://www.yetfab.com/contact?sent=true" />
-
-            {/* Name */}
-            <input
-              type="text"
-              name="name"
-              placeholder="NAME"
-              required
-              className={INPUT_CLASS}
-            />
-
-            {/* Email */}
-            <input
-              type="email"
-              name="email"
-              placeholder="EMAIL"
-              required
-              className={INPUT_CLASS}
-            />
-
-            {/* Select option */}
-            <select
-              name="inquiry_type"
-              required
-              defaultValue=""
-              className={`${INPUT_CLASS} cursor-pointer appearance-none`}
-              style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%232222FF' strokeWidth='1.5' fill='none'/%3E%3C/svg%3E\")", backgroundRepeat: "no-repeat", backgroundPosition: "right 24px center" }}
+            studio@yetarchitecture.com
+          </Link>
+          <Link
+            href="tel:+972586297943"
+            className="text-[0.72rem] leading-[1.8] text-[#0A0A0A] hover:text-[#2222FF] transition-colors"
+          >
+            +972-58-629-7943
+          </Link>
+          <div className="flex flex-col gap-2 mt-2">
+            <Link
+              href="https://www.instagram.com/yetfab/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[0.72rem] text-[#2222FF] hover:underline"
             >
-              <option value="" disabled>SELECT OPTION</option>
-              {SELECT_OPTIONS.map((opt) => (
-                <option key={opt} value={opt}>{opt}</option>
-              ))}
-            </select>
-
-            {/* Message */}
-            <textarea
-              name="message"
-              placeholder="MESSAGE"
-              rows={5}
-              className="w-full bg-transparent border border-[#2222FF] rounded-3xl px-6 py-4 text-[0.75rem] tracking-[0.1em] uppercase placeholder:text-[#AAAAAA] text-[#0A0A0A] outline-none resize-none"
-            />
-
-            {/* Phone */}
-            <input
-              type="tel"
-              name="phone"
-              placeholder="NUMBER"
-              required
-              className={INPUT_CLASS}
-            />
-
-            {/* File attachment */}
-            <div className="border border-[#2222FF] rounded-full px-6 py-4 flex items-center justify-between">
-              <label htmlFor="file" className="text-[0.75rem] tracking-[0.1em] uppercase text-[#AAAAAA] cursor-pointer">
-                ATTACH FILE (OPTIONAL)
-              </label>
-              <input
-                id="file"
-                type="file"
-                name="attachment"
-                className="text-[0.65rem] text-[#888] cursor-pointer w-auto"
-                accept=".pdf,.jpg,.jpeg,.png,.dwg,.zip"
-              />
-            </div>
-
-            {/* Submit */}
-            <button
-              type="submit"
-              className="w-full bg-[#2222FF] text-white text-[0.75rem] tracking-[0.18em] uppercase py-4 rounded-full hover:opacity-90 transition-opacity mt-2"
+              instagram.com/yetfab
+            </Link>
+            <Link
+              href="https://www.linkedin.com/company/yet-fab/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[0.72rem] text-[#2222FF] hover:underline"
             >
-              CONTACT YET:FAB TEAM
-            </button>
-
-            {/* Footer text */}
-            <div className="flex flex-col items-center gap-1 pt-6 pb-2">
-              <p className="text-[0.85rem] tracking-[0.12em] text-[#888] uppercase">
-                CONTACT US
-              </p>
-              <p className="text-[0.65rem] tracking-[0.06em] text-[#AAAAAA]">
-                And we will get back to you soon!
-              </p>
-            </div>
-          </form>
-        )}
+              linkedin.com/company/yet-fab
+            </Link>
+          </div>
+        </div>
       </div>
     </main>
   );
