@@ -14,7 +14,7 @@ export default function ContactPage() {
     <main className="min-h-screen pt-[70px] px-5 md:px-14 pb-20">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-[20px] items-start pt-16">
         {/* Info column */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 md:pl-[200px] md:pt-[200px]">
           <p className="text-[0.72rem] tracking-[0.06em] font-medium text-[#0A0A0A]">
             YET:FAB
           </p>
