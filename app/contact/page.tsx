@@ -60,22 +60,34 @@ export default function ContactPage() {
           </Link>
         </div>
 
-        {/* Image 1 — native ratio, 1080px tall on desktop, starts at top */}
-        <Img
-          src="/images/contact/IMG_2915.jpg"
-          alt="YET:FAB studio — Tel Aviv"
-          className="md:!w-auto md:!h-[1080px]"
-          sizes="(max-width: 768px) 100vw, 40vw"
-          priority
-        />
+        {/* Image 1 — native ratio (2264x3019), 1080px tall on desktop */}
+        <div
+          className="relative w-full md:w-auto md:h-[1080px]"
+          style={{ aspectRatio: "2264 / 3019" }}
+        >
+          <Img
+            src="/images/contact/IMG_2915.jpg"
+            alt="YET:FAB studio — Tel Aviv"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 40vw"
+            priority
+          />
+        </div>
 
-        {/* Image 2 — native ratio, 1080px tall on desktop, flush to right edge */}
-        <Img
-          src="/images/contact/IMG_2913.png"
-          alt="YET:FAB fabrication — Tel Aviv"
-          className="md:!w-auto md:!h-[1080px] md:ml-[10px]"
-          sizes="(max-width: 768px) 100vw, 40vw"
-        />
+        {/* Image 2 — native ratio (2437x3019), 1080px tall, flush to right edge */}
+        <div
+          className="relative w-full md:w-auto md:h-[1080px] md:ml-[10px]"
+          style={{ aspectRatio: "2437 / 3019" }}
+        >
+          <Img
+            src="/images/contact/IMG_2913.png"
+            alt="YET:FAB fabrication — Tel Aviv"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 40vw"
+          />
+        </div>
       </div>
     </main>
   );
