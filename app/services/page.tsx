@@ -43,8 +43,8 @@ export default function ServicesPage() {
 
             {/* Image with button */}
             <div
-              className="relative flex-1"
-              style={{ minHeight: "340px" }}
+              className="relative overflow-hidden"
+              style={{ aspectRatio: "3/4" }}
             >
               <Img
                 src={service.image}
@@ -53,8 +53,6 @@ export default function ServicesPage() {
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
-              {/* Overlay tint */}
-              <div className="absolute inset-0 bg-[#EDEDEB]/60" />
               {/* Button */}
               <div className="absolute bottom-5 left-0 right-0 flex justify-center z-10">
                 <Link

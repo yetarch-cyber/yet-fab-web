@@ -22,7 +22,7 @@ export const services: Service[] = [
       "DISCOVER THE OPPORTUNITY TO DIGITALLY AND PHYSICALLY DEVELOP YOUR IDEA",
     description:
       "We specialize in turning ideas into fabricated reality — from jewelry to facades. Our team guides you through design development, digital modelling, prototyping, and final production.",
-    image: "/images/services/3 - YET (0-18-12-35) copy.jpg",
+    image: "/images/services/850_9093AAA copy.jpg",
   },
   {
     id: "consultation",
@@ -30,6 +30,6 @@ export const services: Service[] = [
     subtitle: "DISCOVER THE EXPERTISE OF OUR TEAM BY BOOKING A MEETING",
     description:
       "Work directly with the YET:FAB team. We offer design consultations, material research, and technical support for individuals, studios, and businesses at any stage of development.",
-    image: "/images/services/850_9093AAA copy.jpg",
+    image: "/images/services/3 - YET (0-18-12-35) copy.jpg",
   },
 ];
