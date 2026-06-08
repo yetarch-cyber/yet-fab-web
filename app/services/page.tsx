@@ -19,7 +19,7 @@ export default function ServicesPage() {
       </p>
 
       {/* Body intro */}
-      <p className="text-[0.72rem] leading-[1.9] text-[#444] max-w-3xl mb-14">
+      <p className="text-[0.72rem] leading-[1.9] font-thin text-[#888] max-w-3xl mb-14">
         Unlock the possibilities of digital fabrication with YET:FAB&apos;s
         skilled in-house team. We specialize in guiding you through every step
         of the process — from design and 3D modeling to printing, fabrication,
