@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen pt-[70px] px-5 md:px-14 pb-20">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[20px] items-start pt-16">
-        {/* Info column */}
-        <div className="flex flex-col gap-6 md:pl-[200px] md:pt-[200px]">
+    <main className="min-h-screen pb-20">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_1.15fr_1.15fr]">
+        {/* Info column — offset 200 right / 200 down */}
+        <div className="flex flex-col gap-6 px-5 md:pl-[200px] md:pr-10 pt-[200px]">
           <p className="text-[0.72rem] tracking-[0.06em] font-medium text-[#0A0A0A]">
             YET:FAB
           </p>
@@ -60,21 +60,21 @@ export default function ContactPage() {
           </Link>
         </div>
 
-        {/* Image 1 — native ratio */}
+        {/* Image 1 — native ratio, starts at top */}
         <Img
           src="/images/contact/IMG_2915.jpg"
           alt="YET:FAB studio — Tel Aviv"
           className="w-full h-auto"
-          sizes="(max-width: 768px) 100vw, 33vw"
+          sizes="(max-width: 768px) 100vw, 40vw"
           priority
         />
 
-        {/* Image 2 — native ratio */}
+        {/* Image 2 — native ratio, flush to right edge */}
         <Img
           src="/images/contact/IMG_2913.png"
           alt="YET:FAB fabrication — Tel Aviv"
-          className="w-full h-auto"
-          sizes="(max-width: 768px) 100vw, 33vw"
+          className="w-full h-auto md:pl-[10px]"
+          sizes="(max-width: 768px) 100vw, 40vw"
         />
       </div>
     </main>
