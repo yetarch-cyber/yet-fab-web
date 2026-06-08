@@ -56,7 +56,7 @@ export default function ServicesPage() {
               {/* Button */}
               <div className="absolute bottom-5 left-0 right-0 flex justify-center z-10">
                 <Link
-                  href="/contact"
+                  href="/contact/inquiry"
                   className="bg-[#2222FF] text-white text-[0.58rem] tracking-[0.16em] uppercase px-6 py-2.5 rounded-full hover:opacity-90 transition-opacity"
                 >
                   CONTACT US

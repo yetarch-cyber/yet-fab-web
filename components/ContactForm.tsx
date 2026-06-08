@@ -26,7 +26,7 @@ export default function ContactForm() {
       <input type="hidden" name="_subject" value="YET:FAB — New Inquiry from Website" />
       <input type="hidden" name="_captcha" value="false" />
       <input type="hidden" name="_template" value="table" />
-      <input type="hidden" name="_next" value="https://www.yetfab.com/contact?sent=true" />
+      <input type="hidden" name="_next" value="https://www.yetfab.com/contact/inquiry?sent=true" />
 
       {/* Name */}
       <input
