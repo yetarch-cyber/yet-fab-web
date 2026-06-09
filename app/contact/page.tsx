@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main className="min-h-screen pb-20">
-      <div className="grid grid-cols-1 md:grid-cols-[minmax(320px,1fr)_auto_auto]">
+      <div className="grid grid-cols-1 md:grid-cols-[minmax(320px,1fr)_auto]">
         {/* Info column — offset right / down */}
         <div className="flex flex-col gap-6 px-5 md:pl-[100px] md:pr-10 pt-[120px] md:pt-[200px]">
           <p className="text-[0.72rem] tracking-[0.06em] font-medium text-[#0A0A0A]">
@@ -60,9 +60,9 @@ export default function ContactPage() {
           </Link>
         </div>
 
-        {/* Image 1 — native ratio (2264x3019), scales up to 1080px tall */}
+        {/* Image — native ratio (2264x3019), 1080px tall, flush to right edge */}
         <div
-          className="relative w-full md:w-auto md:h-[68vh] md:max-h-[1080px]"
+          className="relative w-full md:w-auto md:h-[1080px]"
           style={{ aspectRatio: "2264 / 3019" }}
         >
           <Img
@@ -70,22 +70,8 @@ export default function ContactPage() {
             alt="YET:FAB studio — Tel Aviv"
             fill
             className="object-cover"
-            sizes="(max-width: 768px) 100vw, 30vw"
+            sizes="(max-width: 768px) 100vw, 40vw"
             priority
-          />
-        </div>
-
-        {/* Image 2 — native ratio (2437x3019), flush to right edge */}
-        <div
-          className="relative w-full md:w-auto md:h-[68vh] md:max-h-[1080px] md:ml-[10px]"
-          style={{ aspectRatio: "2437 / 3019" }}
-        >
-          <Img
-            src="/images/contact/IMG_2913.png"
-            alt="YET:FAB fabrication — Tel Aviv"
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 30vw"
           />
         </div>
       </div>
