@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Contact",
   description:
     "Contact YET:FAB — Tel Aviv. studio@yetarchitecture.com · +972-58-629-7943",
-  alternates: { canonical: "https://www.yetfab.com/contact" },
+  alternates: { canonical: "https://www.yet-fab.com/contact" },
 };
 
 export default function ContactPage() {

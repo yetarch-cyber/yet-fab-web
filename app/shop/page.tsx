@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Shop",
   description:
     "Browse and shop YET:FAB products — ALHERD lamps, BAKLAN, THICK candleholders, PARASITE, and more 3D-printed objects from Tel Aviv.",
-  alternates: { canonical: "https://www.yetfab.com/shop" },
+  alternates: { canonical: "https://www.yet-fab.com/shop" },
 };
 
 export default function ShopPage() {

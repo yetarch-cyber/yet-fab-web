@@ -8,7 +8,7 @@ import Img from "@/components/Img";
 export const metadata: Metadata = {
   title:
     "YET:FAB — Digital Fabrication, 3D Printed Objects & Custom Components",
-  alternates: { canonical: "https://www.yetfab.com" },
+  alternates: { canonical: "https://www.yet-fab.com" },
 };
 
 const SHOP_PREVIEW = [

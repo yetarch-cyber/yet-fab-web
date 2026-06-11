@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Services",
   description:
     "YET:FAB services: 3D printing, bespoke digital fabrication, and expert consultation. From concept to production in Tel Aviv.",
-  alternates: { canonical: "https://www.yetfab.com/services" },
+  alternates: { canonical: "https://www.yet-fab.com/services" },
 };
 
 export default function ServicesPage() {

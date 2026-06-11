@@ -32,12 +32,12 @@ export const metadata: Metadata = {
     "sustainable design",
     "furniture design Israel",
   ],
-  metadataBase: new URL("https://www.yetfab.com"),
-  alternates: { canonical: "https://www.yetfab.com" },
+  metadataBase: new URL("https://www.yet-fab.com"),
+  alternates: { canonical: "https://www.yet-fab.com" },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.yetfab.com",
+    url: "https://www.yet-fab.com",
     siteName: "YET:FAB",
     title: "YET:FAB — Digital Fabrication, 3D Printed Objects & Custom Components",
     description:

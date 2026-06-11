@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "About",
   description:
     "YET:FAB is the fabrication studio of YET Architecture — an experimental practice creating 3D-printed objects, lighting, and custom components in Tel Aviv.",
-  alternates: { canonical: "https://www.yetfab.com/about" },
+  alternates: { canonical: "https://www.yet-fab.com/about" },
 };
 
 export default function AboutPage() {
