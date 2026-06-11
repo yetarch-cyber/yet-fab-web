@@ -4,7 +4,7 @@ import Img from "@/components/Img";
 import { services } from "@/data/services";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "3D Printing & Bespoke Fabrication Services",
   description:
     "YET:FAB services: 3D printing, bespoke digital fabrication, and expert consultation. From concept to production in Tel Aviv.",
   alternates: { canonical: "https://www.yet-fab.com/services" },

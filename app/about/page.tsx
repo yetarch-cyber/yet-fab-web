@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Img from "@/components/Img";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About — Digital Fabrication Studio, Tel Aviv",
   description:
     "YET:FAB is the fabrication studio of YET Architecture — an experimental practice creating 3D-printed objects, lighting, and custom components in Tel Aviv.",
   alternates: { canonical: "https://www.yet-fab.com/about" },

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Img from "@/components/Img";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contact — Tel Aviv Studio",
   description:
     "Contact YET:FAB — Tel Aviv. studio@yetarchitecture.com · +972-58-629-7943",
   alternates: { canonical: "https://www.yet-fab.com/contact" },

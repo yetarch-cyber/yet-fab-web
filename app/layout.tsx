@@ -42,12 +42,21 @@ export const metadata: Metadata = {
     title: "YET:FAB — Digital Fabrication, 3D Printed Objects & Custom Components",
     description:
       "YET:FAB is the fabrication studio of YET Architecture, developing 3D-printed objects, lighting, furniture interventions, prototypes, and custom architectural components in Tel Aviv.",
+    images: [
+      {
+        url: "/og.jpg",
+        width: 1200,
+        height: 675,
+        alt: "YET:FAB — Digital Fabrication Studio Tel Aviv",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "YET:FAB — Digital Fabrication, 3D Printed Objects & Custom Components",
     description:
       "YET:FAB is the fabrication studio of YET Architecture, developing 3D-printed objects, lighting, furniture interventions, prototypes, and custom architectural components in Tel Aviv.",
+    images: ["/og.jpg"],
   },
   robots: {
     index: true,

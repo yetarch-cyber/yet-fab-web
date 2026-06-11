@@ -3,7 +3,7 @@ import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Inquiry",
+  title: "Send an Inquiry",
   description:
     "Send an inquiry to YET:FAB — 3D printing, bespoke fabrication, consultation, or shop. We'll get back to you soon.",
   alternates: { canonical: "https://www.yet-fab.com/contact/inquiry" },

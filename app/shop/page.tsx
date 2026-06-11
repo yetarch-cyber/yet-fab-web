@@ -4,7 +4,7 @@ import Img from "@/components/Img";
 import { products } from "@/data/products";
 
 export const metadata: Metadata = {
-  title: "Shop",
+  title: "Shop — 3D-Printed Objects & Lighting",
   description:
     "Browse and shop YET:FAB products — ALHERD lamps, BAKLAN, THICK candleholders, PARASITE, and more 3D-printed objects from Tel Aviv.",
   alternates: { canonical: "https://www.yet-fab.com/shop" },
