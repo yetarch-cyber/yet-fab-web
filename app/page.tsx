@@ -17,30 +17,35 @@ const SHOP_PREVIEW = [
     alt: "THICK candleholder — YET:FAB",
     name: "THICK",
     sub: "Candleholder",
+    href: "/shop",
   },
   {
     src: "/images/shop-preview/241005_YET_0129_ik copy.jpg",
     alt: "PARASITE — YET:FAB artistic object",
     name: "PARASITE",
     sub: "Artistic object",
+    href: "/shop",
   },
   {
     src: "/images/shop-preview/250829_YET_Lamp_0144_ik_F.jpg",
     alt: "ALHERD pendant lamp — YET:FAB",
     name: "ALHERD",
     sub: "Pendant lamp",
+    href: "/shop/alherd-pendant",
   },
   {
-    src: "/images/shop-preview/250829_YET_Lamp_0184_ik_F.jpg",
-    alt: "ALHERD floor lamp — YET:FAB",
+    src: "/images/shop/250829_YET_Lamp_0231_ik_F.jpg",
+    alt: "ALHERD table lamp — YET:FAB",
     name: "ALHERD",
-    sub: "Floor lamp",
+    sub: "Table lamp",
+    href: "/shop/alherd-table",
   },
   {
     src: "/images/shop-preview/Firefly_Gemini Flash (2).png",
     alt: "RAMKOL speaker — YET:FAB",
     name: "RAMKOL",
     sub: "Speaker",
+    href: "/shop",
   },
 ];
 
@@ -58,7 +63,7 @@ export default function Home() {
         {SHOP_PREVIEW.map((item, idx) => (
           <Link
             key={idx}
-            href="/shop"
+            href={item.href}
             className="group flex flex-col"
           >
             {/* Image */}
