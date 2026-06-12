@@ -31,81 +31,59 @@ const GALLERY = [
 export default function AlherdPendantPage() {
   return (
     <main>
-      {/* Hero — full bleed, nav overlays */}
-      <div className="relative w-full" style={{ aspectRatio: "16/9" }}>
-        <Img
-          src="/images/shop/alherd-pendant/250829_YET_Lamp_0162_ik_F.jpg"
-          alt="ALHERD Pendant Lamp with scale reference — YET:FAB"
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-        />
-      </div>
-
-      {/* Breadcrumb */}
-      <div className="px-5 md:px-[100px] pt-8">
-        <p className="text-[0.6rem] tracking-[0.14em] text-[#888] uppercase">
-          <Link href="/shop" className="hover:text-[#2222FF] transition-colors">
-            Shop
-          </Link>
-          {" / "}
-          <span>Pendant lamp</span>
-        </p>
-      </div>
-
-      {/* Title + description + image */}
-      <section className="px-5 md:px-[100px] pt-8 pb-16">
-        {/* Product name */}
-        <div className="mb-8">
-          <p className="text-[0.72rem] tracking-[0.14em] text-[#888] font-thin uppercase mb-2">
-            Pendant lamp
+      {/* First section: 1 col text + 3 col image */}
+      <section className="grid grid-cols-1 md:grid-cols-4 min-h-screen">
+        {/* Col 1: name + description */}
+        <div className="flex flex-col gap-5 px-5 md:px-8 pt-[100px] pb-10 md:pt-[110px]">
+          <p className="text-[0.6rem] tracking-[0.12em] text-[#888] uppercase">
+            <Link href="/shop" className="hover:text-[#2222FF] transition-colors">
+              Shop
+            </Link>
+            {" / "}Pendant lamp
           </p>
-          <h1 className="text-[4rem] md:text-[5rem] font-black tracking-tight text-[#0A0A0A] leading-none">
-            ALHERD
-          </h1>
+          <div>
+            <p className="text-[0.72rem] tracking-[0.14em] text-[#888] font-thin uppercase mb-1">
+              Pendant lamp
+            </p>
+            <h1 className="text-[3.5rem] font-black tracking-tight text-[#0A0A0A] leading-none">
+              ALHERD
+            </h1>
+          </div>
+          <p className="text-[0.78rem] leading-[1.9] text-[#0A0A0A]">
+            A suspended element that brings sculptural softness into overhead
+            lighting.
+          </p>
+          <p className="text-[0.7rem] leading-[2] text-[#888]">
+            The Alherd Pendant Lamp floats in space, casting a gentle, diffused
+            glow over work surfaces, dining areas, or shared environments.
+            Suspended from two minimal cables, its elongated organic form
+            introduces a tactile counterpoint to the typical linear pendant —
+            appearing lightweight while carrying a strong visual identity.
+          </p>
+          <p className="text-[0.7rem] leading-[2] text-[#888]">
+            As with the rest of the collection, its geometry is derived from
+            natural processes — mimicking erosion, coral structures, and growth
+            patterns. The surface is textured and porous, designed to scatter
+            light while remaining calm and uniform in daylight conditions.
+          </p>
+          <p className="text-[0.7rem] leading-[2] text-[#888]">
+            Available in transparent or sunset gradient finishes, the pendant
+            adapts to different spatial moods — either as a neutral sculptural
+            light or a warm, expressive gesture. Internally, it uses an
+            integrated LED tube that emits a soft and efficient ambient light.
+          </p>
         </div>
 
-        {/* Full-width lamp image — object-contain so full lamp is always visible */}
-        <div className="relative w-full bg-[#EDEDEB] mb-10" style={{ aspectRatio: "3/1" }}>
+        {/* Cols 2-4: image */}
+        <div className="md:col-span-3 relative min-h-[50vh] md:min-h-full">
           <Img
             src="/images/shop/alherd-pendant/250829_YET_Lamp_0153_ik_F.jpg"
             alt="ALHERD Pendant Lamp — gradient finish"
             fill
             className="object-contain"
-            sizes="(max-width: 768px) 100vw, calc(100vw - 200px)"
+            priority
+            sizes="(max-width: 768px) 100vw, 75vw"
           />
-        </div>
-
-        {/* Description — two columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
-          <div className="flex flex-col gap-5">
-            <p className="text-[0.8rem] leading-[1.9] text-[#0A0A0A]">
-              A suspended element that brings sculptural softness into overhead
-              lighting.
-            </p>
-            <p className="text-[0.72rem] leading-[2] text-[#888]">
-              The Alherd Pendant Lamp floats in space, casting a gentle, diffused
-              glow over work surfaces, dining areas, or shared environments.
-              Suspended from two minimal cables, its elongated organic form
-              introduces a tactile counterpoint to the typical linear pendant —
-              appearing lightweight while carrying a strong visual identity.
-            </p>
-          </div>
-          <div className="flex flex-col gap-5">
-            <p className="text-[0.72rem] leading-[2] text-[#888]">
-              As with the rest of the collection, its geometry is derived from
-              natural processes — mimicking erosion, coral structures, and growth
-              patterns. The surface is textured and porous, designed to scatter
-              light while remaining calm and uniform in daylight conditions.
-            </p>
-            <p className="text-[0.72rem] leading-[2] text-[#888]">
-              Available in transparent or sunset gradient finishes, the pendant
-              adapts to different spatial moods — either as a neutral sculptural
-              light or a warm, expressive gesture. Internally, it uses an
-              integrated LED tube that emits a soft and efficient ambient light.
-            </p>
-          </div>
         </div>
       </section>
 
