@@ -146,6 +146,17 @@ export default function AlherdPendantPage() {
         </div>
       </section>
 
+      {/* Full-screen scale shot */}
+      <div className="relative w-full h-screen">
+        <Img
+          src="/images/shop/alherd-pendant/250829_YET_Lamp_0162_ik_F.jpg"
+          alt="ALHERD Pendant Lamp — scale reference"
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+      </div>
+
       {/* Gallery */}
       <section className="px-5 md:px-[100px] pt-4 pb-8 grid grid-cols-1 md:grid-cols-2 gap-4">
         {GALLERY.map((img) => (
