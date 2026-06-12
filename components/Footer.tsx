@@ -59,9 +59,17 @@ export default function Footer() {
         <p className="text-[0.48rem] tracking-[0.15em] text-[#AAAAAA] uppercase">
           © 2025 YET:FAB
         </p>
-        <p className="text-[0.48rem] tracking-[0.15em] text-[#AAAAAA] uppercase">
-          Made by YET Architecture
-        </p>
+        <div className="flex items-center gap-6">
+          <Link
+            href="/policies"
+            className="text-[0.48rem] tracking-[0.15em] text-[#AAAAAA] uppercase hover:text-[#2222FF] transition-colors"
+          >
+            Shipping &amp; Policies
+          </Link>
+          <p className="text-[0.48rem] tracking-[0.15em] text-[#AAAAAA] uppercase">
+            Made by YET Architecture
+          </p>
+        </div>
       </div>
     </footer>
   );
