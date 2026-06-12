@@ -231,7 +231,7 @@ export default function AlherdPendantPage() {
             href="/shop/alherd-pendant/order"
             className="bg-[#2222FF] text-white text-[0.6rem] tracking-[0.18em] uppercase px-10 py-4 rounded-full hover:opacity-90 transition-opacity"
           >
-            ORDER / INQUIRE
+            INQUIRE TO PURCHASE
           </Link>
           <Link
             href="/shop"

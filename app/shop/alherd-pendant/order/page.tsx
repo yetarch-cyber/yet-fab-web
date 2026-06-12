@@ -53,7 +53,7 @@ export default function AlherdOrderPage() {
         : `Custom Gradient: ${customNote}`;
 
     const body = new FormData();
-    body.append("_subject", "Order: ALHERD Pendant Lamp");
+    body.append("_subject", "Purchase Inquiry: ALHERD Pendant Lamp");
     body.append("_captcha", "false");
     body.append("_template", "table");
     body.append("Product", "ALHERD Pendant Lamp");
@@ -78,10 +78,11 @@ export default function AlherdOrderPage() {
     return (
       <main className="min-h-screen pt-[90px] px-5 md:px-[100px] pb-20">
         <div className="max-w-lg mx-auto pt-20 flex flex-col items-center gap-6 text-center">
-          <p className="text-[2rem] font-thin text-[#888]">Order received.</p>
+          <p className="text-[2rem] font-thin text-[#888]">Inquiry sent.</p>
           <p className="text-[0.9rem] tracking-[0.04em] text-[#888] leading-[1.8]">
-            Thank you for your order. We will contact you shortly to confirm
-            details and arrange delivery.
+            Thank you. We will get back to you shortly with a full quote
+            including delivery to your location. No payment is taken until you
+            confirm.
           </p>
           <div className="flex gap-3 mt-4">
             <Link
@@ -111,14 +112,15 @@ export default function AlherdOrderPage() {
             ALHERD Pendant Lamp
           </Link>
           {" / "}
-          <span>Order</span>
+          <span>Inquire</span>
         </p>
         <h1 className="text-[2.5rem] font-black tracking-tight text-[#0A0A0A] leading-none">
-          Place Order
+          Inquire to Purchase
         </h1>
         <p className="mt-3 text-[0.85rem] text-[#888] leading-[1.7]">
-          Every lamp is made to order. We will confirm your order and provide a
-          lead time by email.
+          Every lamp is made to order. Fill in your details and we will get back
+          to you with a full quote — including delivery to your location — for
+          confirmation before any payment is made.
         </p>
       </div>
 
@@ -294,7 +296,7 @@ export default function AlherdOrderPage() {
             disabled={!color || submitting}
             className="bg-[#2222FF] text-white text-[0.72rem] tracking-[0.18em] uppercase px-12 py-4 rounded-full hover:opacity-90 transition-opacity disabled:opacity-30 disabled:cursor-not-allowed"
           >
-            {submitting ? "Sending…" : "SUBMIT ORDER"}
+            {submitting ? "Sending…" : "SEND INQUIRY"}
           </button>
         </div>
       </form>
