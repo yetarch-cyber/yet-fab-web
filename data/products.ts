@@ -30,7 +30,7 @@ export const products: Product[] = [
     description:
       "Organic pendant lamp with a sculptural translucent shell. Warm diffused light through a flowing form.",
     image: "/images/shop/250829_YET_Lamp_0144_ik_F.jpg",
-    shopUrl: "#",
+    shopUrl: "/shop/alherd-pendant",
   },
   {
     id: "alherd-table",
