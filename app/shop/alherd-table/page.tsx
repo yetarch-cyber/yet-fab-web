@@ -76,8 +76,8 @@ export default function AlherdTablePage() {
         {/* Cols 2-4: image */}
         <div className="md:col-span-3 relative min-h-[50vh] md:min-h-full">
           <Img
-            src="/images/shop/alherd-table/250829_YET_Lamp_0203_ik_F.jpg"
-            alt="ALHERD Table Lamp — natural finish, grey cable"
+            src="/images/shop/alherd-table/250829_YET_Lamp_0206_ik_F.jpg"
+            alt="ALHERD Table Lamp — green cable"
             fill
             className="object-contain"
             priority
