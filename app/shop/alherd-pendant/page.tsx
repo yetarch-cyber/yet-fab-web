@@ -55,54 +55,57 @@ export default function AlherdPendantPage() {
       </div>
 
       {/* Title + description + image */}
-      <section className="px-5 md:px-[100px] pt-8 pb-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-start">
-        {/* Left: text */}
-        <div className="flex flex-col gap-6">
-          <div>
-            <p className="text-[0.72rem] tracking-[0.14em] text-[#888] font-thin uppercase mb-2">
-              Pendant lamp
-            </p>
-            <h1 className="text-[4rem] md:text-[5rem] font-black tracking-tight text-[#0A0A0A] leading-none mb-4">
-              ALHERD
-            </h1>
-            <p className="text-[0.8rem] leading-[1.9] text-[#0A0A0A]">
-              A suspended element that brings sculptural softness into overhead
-              lighting.
-            </p>
-          </div>
-
-          <p className="text-[0.72rem] leading-[2] text-[#888]">
-            The Alherd Pendant Lamp floats in space, casting a gentle, diffused
-            glow over work surfaces, dining areas, or shared environments.
-            Suspended from two minimal cables, its elongated organic form
-            introduces a tactile counterpoint to the typical linear pendant —
-            appearing lightweight while carrying a strong visual identity.
+      <section className="px-5 md:px-[100px] pt-8 pb-16">
+        {/* Product name */}
+        <div className="mb-8">
+          <p className="text-[0.72rem] tracking-[0.14em] text-[#888] font-thin uppercase mb-2">
+            Pendant lamp
           </p>
-
-          <p className="text-[0.72rem] leading-[2] text-[#888]">
-            As with the rest of the collection, its geometry is derived from
-            natural processes — mimicking erosion, coral structures, and growth
-            patterns. The surface is textured and porous, designed to scatter
-            light while remaining calm and uniform in daylight conditions.
-          </p>
-
-          <p className="text-[0.72rem] leading-[2] text-[#888]">
-            Available in transparent or sunset gradient finishes, the pendant
-            adapts to different spatial moods — either as a neutral sculptural
-            light or a warm, expressive gesture. Internally, it uses an
-            integrated LED tube that emits a soft and efficient ambient light.
-          </p>
+          <h1 className="text-[4rem] md:text-[5rem] font-black tracking-tight text-[#0A0A0A] leading-none">
+            ALHERD
+          </h1>
         </div>
 
-        {/* Right: product shot */}
-        <div className="relative w-full" style={{ aspectRatio: "16/9" }}>
+        {/* Full-width lamp image — object-contain so full lamp is always visible */}
+        <div className="relative w-full bg-[#EDEDEB] mb-10" style={{ aspectRatio: "3/1" }}>
           <Img
             src="/images/shop/alherd-pendant/250829_YET_Lamp_0153_ik_F.jpg"
             alt="ALHERD Pendant Lamp — gradient finish"
             fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-contain"
+            sizes="(max-width: 768px) 100vw, calc(100vw - 200px)"
           />
+        </div>
+
+        {/* Description — two columns */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
+          <div className="flex flex-col gap-5">
+            <p className="text-[0.8rem] leading-[1.9] text-[#0A0A0A]">
+              A suspended element that brings sculptural softness into overhead
+              lighting.
+            </p>
+            <p className="text-[0.72rem] leading-[2] text-[#888]">
+              The Alherd Pendant Lamp floats in space, casting a gentle, diffused
+              glow over work surfaces, dining areas, or shared environments.
+              Suspended from two minimal cables, its elongated organic form
+              introduces a tactile counterpoint to the typical linear pendant —
+              appearing lightweight while carrying a strong visual identity.
+            </p>
+          </div>
+          <div className="flex flex-col gap-5">
+            <p className="text-[0.72rem] leading-[2] text-[#888]">
+              As with the rest of the collection, its geometry is derived from
+              natural processes — mimicking erosion, coral structures, and growth
+              patterns. The surface is textured and porous, designed to scatter
+              light while remaining calm and uniform in daylight conditions.
+            </p>
+            <p className="text-[0.72rem] leading-[2] text-[#888]">
+              Available in transparent or sunset gradient finishes, the pendant
+              adapts to different spatial moods — either as a neutral sculptural
+              light or a warm, expressive gesture. Internally, it uses an
+              integrated LED tube that emits a soft and efficient ambient light.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -225,7 +228,7 @@ export default function AlherdPendantPage() {
             </p>
           </div>
           <Link
-            href="/contact/inquiry"
+            href="/shop/alherd-pendant/order"
             className="bg-[#2222FF] text-white text-[0.6rem] tracking-[0.18em] uppercase px-10 py-4 rounded-full hover:opacity-90 transition-opacity"
           >
             ORDER / INQUIRE
