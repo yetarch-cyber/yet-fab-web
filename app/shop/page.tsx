@@ -22,15 +22,19 @@ export default function ShopPage() {
               className="flex flex-col border-b border-r border-[#2222FF]"
             >
               {/* Vertical image */}
-              <div className="relative overflow-hidden" style={{ aspectRatio: "3/4" }}>
+              <Link
+                href={product.shopUrl}
+                className="relative overflow-hidden block"
+                style={{ aspectRatio: "3/4" }}
+              >
                 <Img
                   src={product.image}
                   alt={`${product.type} ${product.name} — YET:FAB`}
                   fill
-                  className="object-cover"
+                  className="object-cover hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 768px) 50vw, 25vw"
                 />
-              </div>
+              </Link>
 
               {/* Info */}
               <div className="flex flex-col items-center gap-[50px] py-5 px-4 text-center">
