@@ -9,6 +9,7 @@ export default function AlherdTableOrderPage() {
   const [qty, setQty] = useState(1);
   const [cable, setCable] = useState("");
   const [filterColour, setFilterColour] = useState("");
+  const [filterCustom, setFilterCustom] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -32,7 +33,7 @@ export default function AlherdTableOrderPage() {
         product: "ALHERD Table Lamp",
         quantity: qty,
         cable_colour: cable,
-        filter_colour: filterColour || "Not specified",
+        filter_colour: filterColour === "custom" ? `Custom: ${filterCustom}` : filterColour || "Not specified",
         total_estimate: `₪${(PRICE * qty).toLocaleString()}`,
         name,
         email,
@@ -174,20 +175,43 @@ export default function AlherdTableOrderPage() {
 
         {/* Step 3: Filter colour */}
         <div>
-          <p className="text-[0.58rem] tracking-[0.18em] text-[#2222FF] uppercase mb-2">
+          <p className="text-[0.58rem] tracking-[0.18em] text-[#2222FF] uppercase mb-6">
             03 — Filter colour
           </p>
-          <p className="text-[0.62rem] text-[#888] mb-5">
-            The internal filter tints the light. Describe your preferred colour
-            or leave blank for our recommendation.
-          </p>
-          <textarea
-            value={filterColour}
-            onChange={(e) => setFilterColour(e.target.value)}
-            placeholder="e.g. warm amber, deep red, natural white…"
-            rows={3}
-            className="w-full border border-[#DCDAD5] px-4 py-3 text-[0.7rem] text-[#0A0A0A] placeholder:text-[#AAAAAA] focus:outline-none focus:border-[#2222FF] resize-none bg-transparent"
-          />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {[
+              { id: "green", label: "Green" },
+              { id: "pink", label: "Pink" },
+              { id: "natural", label: "Natural" },
+              { id: "custom", label: "Custom" },
+            ].map((opt) => (
+              <button
+                key={opt.id}
+                type="button"
+                onClick={() => setFilterColour(opt.id)}
+                className={`border p-5 text-left transition-colors ${
+                  filterColour === opt.id
+                    ? "border-[#2222FF] bg-[#2222FF]/5"
+                    : "border-[#DCDAD5] hover:border-[#0A0A0A]"
+                }`}
+              >
+                <p className={`text-[0.7rem] font-bold tracking-[0.08em] uppercase ${filterColour === opt.id ? "text-[#2222FF]" : "text-[#0A0A0A]"}`}>
+                  {opt.label}
+                </p>
+              </button>
+            ))}
+          </div>
+          {filterColour === "custom" && (
+            <div className="mt-4">
+              <textarea
+                value={filterCustom}
+                onChange={(e) => setFilterCustom(e.target.value)}
+                placeholder="Describe your preferred filter colour…"
+                rows={3}
+                className="w-full border border-[#DCDAD5] px-4 py-3 text-[0.7rem] text-[#0A0A0A] placeholder:text-[#AAAAAA] focus:outline-none focus:border-[#2222FF] resize-none bg-transparent"
+              />
+            </div>
+          )}
         </div>
 
         {/* Step 4: Contact details */}
