@@ -23,6 +23,12 @@ const COLORS = [
   },
 ];
 
+const INPUT =
+  "w-full border-b border-[#DCDAD5] bg-transparent pb-3 text-[1rem] text-[#0A0A0A] placeholder-[#AAAAAA] focus:outline-none focus:border-[#2222FF] transition-colors";
+
+const LABEL =
+  "block text-[0.7rem] tracking-[0.12em] font-medium text-[#888] uppercase mb-2";
+
 export default function AlherdOrderPage() {
   const [qty, setQty] = useState(1);
   const [color, setColor] = useState("");
@@ -73,20 +79,20 @@ export default function AlherdOrderPage() {
       <main className="min-h-screen pt-[90px] px-5 md:px-[100px] pb-20">
         <div className="max-w-lg mx-auto pt-20 flex flex-col items-center gap-6 text-center">
           <p className="text-[2rem] font-thin text-[#888]">Order received.</p>
-          <p className="text-[0.75rem] tracking-[0.08em] text-[#888] leading-[1.8]">
+          <p className="text-[0.9rem] tracking-[0.04em] text-[#888] leading-[1.8]">
             Thank you for your order. We will contact you shortly to confirm
             details and arrange delivery.
           </p>
           <div className="flex gap-3 mt-4">
             <Link
               href="/shop/alherd-pendant"
-              className="bg-[#2222FF] text-white text-[0.6rem] tracking-[0.16em] uppercase px-8 py-3 rounded-full hover:opacity-90 transition-opacity"
+              className="bg-[#2222FF] text-white text-[0.7rem] tracking-[0.16em] uppercase px-8 py-3 rounded-full hover:opacity-90 transition-opacity"
             >
               BACK TO LAMP
             </Link>
             <Link
               href="/shop"
-              className="border border-[#2222FF] text-[#2222FF] text-[0.6rem] tracking-[0.16em] uppercase px-8 py-3 rounded-full hover:bg-[#2222FF] hover:text-white transition-colors"
+              className="border border-[#2222FF] text-[#2222FF] text-[0.7rem] tracking-[0.16em] uppercase px-8 py-3 rounded-full hover:bg-[#2222FF] hover:text-white transition-colors"
             >
               VIEW ALL PRODUCTS
             </Link>
@@ -100,7 +106,7 @@ export default function AlherdOrderPage() {
     <main className="min-h-screen pt-[90px] px-5 md:px-[100px] pb-24">
       {/* Header */}
       <div className="pt-10 pb-12 border-b border-[#DCDAD5]">
-        <p className="text-[0.6rem] tracking-[0.14em] text-[#888] uppercase mb-3">
+        <p className="text-[0.7rem] tracking-[0.12em] text-[#888] uppercase mb-3">
           <Link href="/shop/alherd-pendant" className="hover:text-[#2222FF] transition-colors">
             ALHERD Pendant Lamp
           </Link>
@@ -110,7 +116,7 @@ export default function AlherdOrderPage() {
         <h1 className="text-[2.5rem] font-black tracking-tight text-[#0A0A0A] leading-none">
           Place Order
         </h1>
-        <p className="mt-3 text-[0.68rem] tracking-[0.06em] text-[#888]">
+        <p className="mt-3 text-[0.85rem] text-[#888] leading-[1.7]">
           Every lamp is made to order. We will confirm your order and provide a
           lead time by email.
         </p>
@@ -120,24 +126,24 @@ export default function AlherdOrderPage() {
 
         {/* 01 Quantity */}
         <div>
-          <p className="text-[0.55rem] tracking-[0.2em] text-[#2222FF] uppercase mb-5">
+          <p className="text-[0.75rem] tracking-[0.18em] font-bold text-[#2222FF] uppercase mb-6">
             01 — Quantity
           </p>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-5">
             <button
               type="button"
               onClick={() => setQty((q) => Math.max(1, q - 1))}
-              className="w-10 h-10 rounded-full border border-[#DCDAD5] text-[#0A0A0A] text-lg hover:border-[#2222FF] hover:text-[#2222FF] transition-colors flex items-center justify-center"
+              className="w-12 h-12 rounded-full border border-[#DCDAD5] text-[#0A0A0A] text-xl hover:border-[#2222FF] hover:text-[#2222FF] transition-colors flex items-center justify-center"
             >
               −
             </button>
-            <span className="text-[1.5rem] font-thin text-[#0A0A0A] w-8 text-center">
+            <span className="text-[2rem] font-medium text-[#0A0A0A] w-10 text-center">
               {qty}
             </span>
             <button
               type="button"
               onClick={() => setQty((q) => q + 1)}
-              className="w-10 h-10 rounded-full border border-[#DCDAD5] text-[#0A0A0A] text-lg hover:border-[#2222FF] hover:text-[#2222FF] transition-colors flex items-center justify-center"
+              className="w-12 h-12 rounded-full border border-[#DCDAD5] text-[#0A0A0A] text-xl hover:border-[#2222FF] hover:text-[#2222FF] transition-colors flex items-center justify-center"
             >
               +
             </button>
@@ -146,7 +152,7 @@ export default function AlherdOrderPage() {
 
         {/* 02 Colour */}
         <div>
-          <p className="text-[0.55rem] tracking-[0.2em] text-[#2222FF] uppercase mb-5">
+          <p className="text-[0.75rem] tracking-[0.18em] font-bold text-[#2222FF] uppercase mb-6">
             02 — Colour
           </p>
           <div className="grid grid-cols-3 gap-3">
@@ -158,18 +164,18 @@ export default function AlherdOrderPage() {
                   setColor(c.id);
                   if (c.id !== "custom") setCustomNote("");
                 }}
-                className={`flex flex-col items-center gap-3 p-5 border rounded-sm transition-all ${
+                className={`flex flex-col items-center gap-4 p-6 border rounded-sm transition-all ${
                   color === c.id
                     ? "border-[#2222FF] bg-white"
                     : "border-[#DCDAD5] hover:border-[#0A0A0A]"
                 }`}
               >
-                <div className={`w-10 h-10 rounded-full ${c.swatch}`} />
+                <div className={`w-12 h-12 rounded-full ${c.swatch}`} />
                 <div className="text-center">
-                  <p className="text-[0.65rem] font-bold tracking-[0.06em] text-[#0A0A0A]">
+                  <p className="text-[0.8rem] font-bold tracking-[0.04em] text-[#0A0A0A]">
                     {c.label}
                   </p>
-                  <p className="text-[0.55rem] tracking-[0.08em] text-[#888] uppercase">
+                  <p className="text-[0.65rem] tracking-[0.08em] text-[#888] uppercase mt-0.5">
                     {c.sub}
                   </p>
                 </div>
@@ -179,17 +185,15 @@ export default function AlherdOrderPage() {
 
           {/* Custom gradient note */}
           {color === "custom" && (
-            <div className="mt-4">
-              <label className="block text-[0.58rem] tracking-[0.12em] text-[#888] uppercase mb-2">
-                Describe your gradient
-              </label>
+            <div className="mt-5">
+              <label className={LABEL}>Describe your gradient</label>
               <textarea
                 value={customNote}
                 onChange={(e) => setCustomNote(e.target.value)}
                 required
                 rows={3}
                 placeholder="e.g. deep blue fading to warm sand..."
-                className="w-full border border-[#DCDAD5] bg-transparent px-4 py-3 text-[0.72rem] text-[#0A0A0A] placeholder-[#AAAAAA] focus:outline-none focus:border-[#2222FF] resize-none"
+                className="w-full border border-[#DCDAD5] bg-transparent px-4 py-3 text-[1rem] text-[#0A0A0A] placeholder-[#AAAAAA] focus:outline-none focus:border-[#2222FF] resize-none"
               />
             </div>
           )}
@@ -197,77 +201,67 @@ export default function AlherdOrderPage() {
 
         {/* 03 Your details */}
         <div>
-          <p className="text-[0.55rem] tracking-[0.2em] text-[#2222FF] uppercase mb-5">
+          <p className="text-[0.75rem] tracking-[0.18em] font-bold text-[#2222FF] uppercase mb-6">
             03 — Your Details
           </p>
-          <div className="flex flex-col gap-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="flex flex-col gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label className="block text-[0.55rem] tracking-[0.12em] text-[#888] uppercase mb-1.5">
-                  Full name *
-                </label>
+                <label className={LABEL}>Full name *</label>
                 <input
                   type="text"
                   required
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full border-b border-[#DCDAD5] bg-transparent pb-2 text-[0.75rem] text-[#0A0A0A] placeholder-[#AAAAAA] focus:outline-none focus:border-[#2222FF] transition-colors"
+                  className={INPUT}
                   placeholder="Your name"
                 />
               </div>
               <div>
-                <label className="block text-[0.55rem] tracking-[0.12em] text-[#888] uppercase mb-1.5">
-                  Email *
-                </label>
+                <label className={LABEL}>Email *</label>
                 <input
                   type="email"
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full border-b border-[#DCDAD5] bg-transparent pb-2 text-[0.75rem] text-[#0A0A0A] placeholder-[#AAAAAA] focus:outline-none focus:border-[#2222FF] transition-colors"
+                  className={INPUT}
                   placeholder="your@email.com"
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-[0.55rem] tracking-[0.12em] text-[#888] uppercase mb-1.5">
-                Phone *
-              </label>
+              <label className={LABEL}>Phone *</label>
               <input
                 type="tel"
                 required
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                className="w-full border-b border-[#DCDAD5] bg-transparent pb-2 text-[0.75rem] text-[#0A0A0A] placeholder-[#AAAAAA] focus:outline-none focus:border-[#2222FF] transition-colors"
+                className={INPUT}
                 placeholder="+972 ···"
               />
             </div>
 
             <div>
-              <label className="block text-[0.55rem] tracking-[0.12em] text-[#888] uppercase mb-1.5">
-                Delivery address *
-              </label>
+              <label className={LABEL}>Delivery address *</label>
               <input
                 type="text"
                 required
                 value={address}
                 onChange={(e) => setAddress(e.target.value)}
-                className="w-full border-b border-[#DCDAD5] bg-transparent pb-2 text-[0.75rem] text-[#0A0A0A] placeholder-[#AAAAAA] focus:outline-none focus:border-[#2222FF] transition-colors"
+                className={INPUT}
                 placeholder="Street, city, country"
               />
             </div>
 
             <div>
-              <label className="block text-[0.55rem] tracking-[0.12em] text-[#888] uppercase mb-1.5">
-                Additional comments
-              </label>
+              <label className={LABEL}>Additional comments</label>
               <textarea
                 value={comments}
                 onChange={(e) => setComments(e.target.value)}
                 rows={3}
                 placeholder="Any special requests or questions..."
-                className="w-full border border-[#DCDAD5] bg-transparent px-4 py-3 text-[0.72rem] text-[#0A0A0A] placeholder-[#AAAAAA] focus:outline-none focus:border-[#2222FF] resize-none"
+                className="w-full border border-[#DCDAD5] bg-transparent px-4 py-3 text-[1rem] text-[#0A0A0A] placeholder-[#AAAAAA] focus:outline-none focus:border-[#2222FF] resize-none"
               />
             </div>
           </div>
@@ -275,11 +269,11 @@ export default function AlherdOrderPage() {
 
         {/* Summary + submit */}
         <div className="border-t border-[#DCDAD5] pt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-          <div className="text-[0.65rem] leading-[1.9] text-[#888]">
+          <div className="text-[0.85rem] leading-[1.9] text-[#888]">
             {qty > 0 && color && (
               <>
                 <p>
-                  <span className="text-[#0A0A0A] font-medium">{qty} ×</span>{" "}
+                  <span className="text-[#0A0A0A] font-semibold">{qty} ×</span>{" "}
                   ALHERD Pendant Lamp
                 </p>
                 <p>
@@ -289,7 +283,7 @@ export default function AlherdOrderPage() {
                     ? "Sunset Gradient"
                     : "Custom Gradient"}
                 </p>
-                <p className="mt-1 text-[#0A0A0A] font-medium">
+                <p className="mt-1 text-[1.1rem] text-[#0A0A0A] font-semibold">
                   ₪{(6700 * qty).toLocaleString()}
                 </p>
               </>
@@ -298,7 +292,7 @@ export default function AlherdOrderPage() {
           <button
             type="submit"
             disabled={!color || submitting}
-            className="bg-[#2222FF] text-white text-[0.6rem] tracking-[0.18em] uppercase px-12 py-4 rounded-full hover:opacity-90 transition-opacity disabled:opacity-30 disabled:cursor-not-allowed"
+            className="bg-[#2222FF] text-white text-[0.72rem] tracking-[0.18em] uppercase px-12 py-4 rounded-full hover:opacity-90 transition-opacity disabled:opacity-30 disabled:cursor-not-allowed"
           >
             {submitting ? "Sending…" : "SUBMIT ORDER"}
           </button>
