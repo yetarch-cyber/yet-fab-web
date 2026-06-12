@@ -41,7 +41,7 @@ export const products: Product[] = [
     description:
       "Compact table lamp with a perforated mineral-like shell. Organic form, warm presence.",
     image: "/images/shop/250829_YET_Lamp_0231_ik_F.jpg",
-    shopUrl: "#",
+    shopUrl: "/shop/alherd-table",
   },
   {
     id: "alherd-floor",
