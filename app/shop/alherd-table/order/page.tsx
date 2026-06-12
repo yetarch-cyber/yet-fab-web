@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
-const PRICE = 3800;
+const PRICE = 480;
 
 export default function AlherdTableOrderPage() {
   const [qty, setQty] = useState(1);

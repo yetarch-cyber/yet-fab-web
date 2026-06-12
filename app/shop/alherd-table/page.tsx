@@ -197,7 +197,7 @@ export default function AlherdTablePage() {
               Price
             </p>
             <p className="text-[2.5rem] font-thin text-[#0A0A0A] leading-none">
-              ₪3,800
+              ₪480
             </p>
             <p className="text-[0.58rem] tracking-[0.1em] text-[#888] mt-1">
               Made to order · Lead time on inquiry
