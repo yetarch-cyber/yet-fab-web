@@ -180,35 +180,44 @@ export default function AlherdTableOrderPage() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {[
-              { id: "green", label: "Green" },
-              { id: "pink", label: "Pink" },
-              { id: "natural", label: "Natural" },
-              { id: "custom", label: "Custom" },
+              { id: "green",   label: "Green",   sub: "Filter",   swatch: "bg-[#7EC86A]" },
+              { id: "pink",    label: "Pink",    sub: "Filter",   swatch: "bg-[#F4A0B0]" },
+              { id: "natural", label: "Natural", sub: "Filter",   swatch: "bg-white border border-[#DCDAD5]" },
+              { id: "custom",  label: "Custom",  sub: "Colour",   swatch: "bg-gradient-to-b from-[#2222FF] to-[#7EC86A]" },
             ].map((opt) => (
               <button
                 key={opt.id}
                 type="button"
-                onClick={() => setFilterColour(opt.id)}
-                className={`border p-5 text-left transition-colors ${
+                onClick={() => {
+                  setFilterColour(opt.id);
+                  if (opt.id !== "custom") setFilterCustom("");
+                }}
+                className={`flex flex-col items-center gap-4 p-6 border rounded-sm transition-all ${
                   filterColour === opt.id
-                    ? "border-[#2222FF] bg-[#2222FF]/5"
+                    ? "border-[#2222FF] bg-white"
                     : "border-[#DCDAD5] hover:border-[#0A0A0A]"
                 }`}
               >
-                <p className={`text-[0.7rem] font-bold tracking-[0.08em] uppercase ${filterColour === opt.id ? "text-[#2222FF]" : "text-[#0A0A0A]"}`}>
-                  {opt.label}
-                </p>
+                <div className={`w-12 h-12 rounded-full ${opt.swatch}`} />
+                <div className="text-center">
+                  <p className="text-[0.8rem] font-bold tracking-[0.04em] text-[#0A0A0A]">
+                    {opt.label}
+                  </p>
+                  <p className="text-[0.65rem] tracking-[0.08em] text-[#888] uppercase mt-0.5">
+                    {opt.sub}
+                  </p>
+                </div>
               </button>
             ))}
           </div>
           {filterColour === "custom" && (
-            <div className="mt-4">
+            <div className="mt-5">
               <textarea
                 value={filterCustom}
                 onChange={(e) => setFilterCustom(e.target.value)}
                 placeholder="Describe your preferred filter colour…"
                 rows={3}
-                className="w-full border border-[#DCDAD5] px-4 py-3 text-[0.7rem] text-[#0A0A0A] placeholder:text-[#AAAAAA] focus:outline-none focus:border-[#2222FF] resize-none bg-transparent"
+                className="w-full border border-[#DCDAD5] px-4 py-3 text-[1rem] text-[#0A0A0A] placeholder-[#AAAAAA] focus:outline-none focus:border-[#2222FF] resize-none bg-transparent"
               />
             </div>
           )}
