@@ -4,6 +4,24 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  async headers() {
+    return [
+      {
+        // Cache all static images for 1 year — immutable means CDN never re-fetches
+        source: "/images/(.*)",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      },
+      {
+        // Cache other static assets (fonts, icons, og image) for 1 year
+        source: "/(.*\\.(?:ico|png|jpg|jpeg|svg|woff2|woff))",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
