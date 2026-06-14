@@ -76,10 +76,10 @@ export default function AlherdFloorPage() {
         {/* Cols 2-4: image */}
         <div className="md:col-span-3 relative min-h-[50vh] md:min-h-full">
           <Img
-            src="/images/shop/alherd-floor/250829_YET_Lamp_0059_ik_F.jpg"
-            alt="ALHERD Floor Lamp — natural transparent finish"
+            src="/images/shop/alherd-floor/250829_YET_Lamp_0098_ik_F.jpg"
+            alt="ALHERD Floor Lamp — scale reference"
             fill
-            className="object-contain"
+            className="object-contain object-top"
             priority
             sizes="(max-width: 768px) 100vw, 75vw"
           />
