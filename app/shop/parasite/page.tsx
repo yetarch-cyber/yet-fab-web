@@ -26,8 +26,8 @@ const GALLERY = [
     ratio: "16/9",
   },
   {
-    src: "/images/shop/parasite/241005_YET_0058_ik copy.jpg",
-    alt: "PARASITE — lamp variant, warm glow",
+    src: "/images/shop/parasite/241005_YET_0169_ik copy.jpg",
+    alt: "PARASITE — detail",
     ratio: "16/9",
   },
   {
@@ -41,13 +41,13 @@ const GALLERY = [
     ratio: "3/4",
   },
   {
-    src: "/images/shop/parasite/241005_YET_0113_ik copy.jpg",
-    alt: "PARASITE — surface texture detail, lit",
+    src: "/images/shop/parasite/241005_YET_0157_ik copy.jpg",
+    alt: "PARASITE — detail",
     ratio: "16/9",
   },
   {
-    src: "/images/shop/parasite/241005_YET_0114_ik copy.jpg",
-    alt: "PARASITE — texture detail, warm light",
+    src: "/images/shop/parasite/241005_YET_0219_ik copy.jpg",
+    alt: "PARASITE — detail",
     ratio: "16/9",
   },
 ];
