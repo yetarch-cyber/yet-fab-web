@@ -41,7 +41,7 @@ const SHOP_PREVIEW = [
     href: "/shop/alherd-table",
   },
   {
-    src: "/images/shop/alherd-floor/250829_YET_Lamp_0094_ik_F.jpg",
+    src: "/images/shop/YET_10_2 (1) copy.jpg",
     alt: "ALHERD floor lamp — YET:FAB",
     name: "ALHERD",
     sub: "Floor lamp",
