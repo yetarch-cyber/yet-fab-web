@@ -11,14 +11,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/contact`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
     { url: `${base}/shop/alherd-pendant`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
-    { url: `${base}/shop/alherd-pendant/order`, lastModified: now, changeFrequency: "yearly", priority: 0.5 },
     { url: `${base}/policies`, lastModified: now, changeFrequency: "yearly", priority: 0.4 },
-    { url: `${base}/contact/inquiry`, lastModified: now, changeFrequency: "yearly", priority: 0.5 },
     { url: `${base}/shop/alherd-table`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
-    { url: `${base}/shop/alherd-table/order`, lastModified: now, changeFrequency: "yearly", priority: 0.5 },
     { url: `${base}/shop/alherd-floor`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
-    { url: `${base}/shop/alherd-floor/order`, lastModified: now, changeFrequency: "yearly", priority: 0.5 },
     { url: `${base}/shop/parasite`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${base}/shop/parasite/inquiry`, lastModified: now, changeFrequency: "yearly", priority: 0.5 },
   ];
 }

@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description:
     "Send an inquiry to YET:FAB — 3D printing, bespoke fabrication, consultation, or shop. We'll get back to you soon.",
   alternates: { canonical: "https://www.yet-fab.com/contact/inquiry" },
+  robots: { index: false, follow: false },
 };
 
 export default function InquiryPage({
