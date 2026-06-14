@@ -122,8 +122,8 @@ export default function ParasitePage() {
       {/* Full-screen team shot */}
       <div className="relative w-full h-screen">
         <Img
-          src="/images/shop/parasite/241005_YET_0253_ik copy.jpg"
-          alt="PARASITE — three colour variants held by team"
+          src="/images/shop/parasite/241005_YET_0261_ik copy.jpg"
+          alt="PARASITE — sculptural intervention detail"
           fill
           className="object-cover object-top"
           sizes="100vw"
