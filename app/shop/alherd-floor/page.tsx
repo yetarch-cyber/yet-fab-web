@@ -7,6 +7,15 @@ export const metadata: Metadata = {
   description:
     "The ALHERD Floor Lamp by YET:FAB — vertical light sculpture in natural or gradient finish. 130 or 160 cm, integrated LED, made to order in Tel Aviv. ₪6,600.",
   alternates: { canonical: "https://www.yet-fab.com/shop/alherd-floor" },
+  openGraph: {
+    type: "website",
+    url: "https://www.yet-fab.com/shop/alherd-floor",
+    siteName: "YET:FAB",
+    title: "ALHERD Floor Lamp — 3D-Printed Sculptural Lighting",
+    description:
+      "The ALHERD Floor Lamp by YET:FAB — vertical light sculpture in natural or gradient finish. 130 or 160 cm, integrated LED, made to order in Tel Aviv. ₪6,600.",
+    images: [{ url: "/images/shop/alherd-floor/250829_YET_Lamp_0098_ik_F.jpg", alt: "ALHERD Floor Lamp by YET:FAB" }],
+  },
 };
 
 const GALLERY = [

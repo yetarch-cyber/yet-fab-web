@@ -7,6 +7,15 @@ export const metadata: Metadata = {
   description:
     "The ALHERD Pendant Lamp by YET:FAB — suspended sculptural pendant in natural or gradient finish. 130 cm, integrated LED, made to order. ₪6,700.",
   alternates: { canonical: "https://www.yet-fab.com/shop/alherd-pendant" },
+  openGraph: {
+    type: "website",
+    url: "https://www.yet-fab.com/shop/alherd-pendant",
+    siteName: "YET:FAB",
+    title: "ALHERD Pendant Lamp — 3D-Printed Sculptural Lighting",
+    description:
+      "The ALHERD Pendant Lamp by YET:FAB — suspended sculptural pendant in natural or gradient finish. 130 cm, integrated LED, made to order. ₪6,700.",
+    images: [{ url: "/images/shop-preview/250829_YET_Lamp_0144_ik_F.jpg", alt: "ALHERD Pendant Lamp by YET:FAB" }],
+  },
 };
 
 const GALLERY = [

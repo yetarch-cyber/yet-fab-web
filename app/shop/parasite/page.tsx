@@ -7,6 +7,15 @@ export const metadata: Metadata = {
   description:
     "PARASITE by YET:FAB & Binderman Architects — custom 3D-printed sculptural additions that attach to mass-produced furniture, transforming it into a unique piece.",
   alternates: { canonical: "https://www.yet-fab.com/shop/parasite" },
+  openGraph: {
+    type: "website",
+    url: "https://www.yet-fab.com/shop/parasite",
+    siteName: "YET:FAB",
+    title: "PARASITE — Bespoke 3D-Printed Furniture Interventions",
+    description:
+      "PARASITE by YET:FAB & Binderman Architects — custom 3D-printed sculptural additions that attach to mass-produced furniture, transforming it into a unique piece.",
+    images: [{ url: "/images/shop/parasite/241005_YET_0129_ik copy.jpg", alt: "PARASITE by YET:FAB" }],
+  },
 };
 
 const GALLERY = [

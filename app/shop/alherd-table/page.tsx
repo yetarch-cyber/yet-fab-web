@@ -7,6 +7,15 @@ export const metadata: Metadata = {
   description:
     "The ALHERD Table Lamp by YET:FAB — compact sculptural table lamp with organic perforated form. Choice of cable colour and filter. Made to order in Tel Aviv.",
   alternates: { canonical: "https://www.yet-fab.com/shop/alherd-table" },
+  openGraph: {
+    type: "website",
+    url: "https://www.yet-fab.com/shop/alherd-table",
+    siteName: "YET:FAB",
+    title: "ALHERD Table Lamp — 3D-Printed Sculptural Lighting",
+    description:
+      "The ALHERD Table Lamp by YET:FAB — compact sculptural table lamp with organic perforated form. Choice of cable colour and filter. Made to order in Tel Aviv.",
+    images: [{ url: "/images/shop/250829_YET_Lamp_0231_ik_F.jpg", alt: "ALHERD Table Lamp by YET:FAB" }],
+  },
 };
 
 const GALLERY = [
