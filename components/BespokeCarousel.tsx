@@ -4,19 +4,19 @@ import Link from "next/link";
 import Img from "./Img";
 
 const SLIDES = [
-  "/images/bespoke/11.jpg",
-  "/images/bespoke/12.jpg",
-  "/images/bespoke/15.jpg",
-  "/images/bespoke/20.jpg",
-  "/images/bespoke/23.jpg",
-  "/images/bespoke/24.jpg",
-  "/images/bespoke/32.jpg",
-  "/images/bespoke/38.jpg",
-  "/images/bespoke/4.jpg",
-  "/images/bespoke/7.jpg",
-  "/images/bespoke/8.jpg",
-  "/images/bespoke/ADA_02.jpg",
-  "/images/bespoke/ADA_YET_7.jpg",
+  { src: "/images/bespoke/11.jpg", alt: "YET:FAB bespoke 3D-printed object — experimental fabrication" },
+  { src: "/images/bespoke/12.jpg", alt: "YET:FAB digital fabrication — custom architectural component" },
+  { src: "/images/bespoke/15.jpg", alt: "YET:FAB bespoke project — 3D-printed sculptural form" },
+  { src: "/images/bespoke/20.jpg", alt: "YET:FAB fabrication studio — organic 3D-printed object" },
+  { src: "/images/bespoke/23.jpg", alt: "YET:FAB bespoke — parametric design and fabrication" },
+  { src: "/images/bespoke/24.jpg", alt: "YET:FAB custom fabrication — experimental 3D-printed piece" },
+  { src: "/images/bespoke/32.jpg", alt: "YET:FAB digital fabrication — bespoke object, Tel Aviv" },
+  { src: "/images/bespoke/38.jpg", alt: "YET:FAB — custom 3D-printed architectural component" },
+  { src: "/images/bespoke/4.jpg", alt: "YET:FAB bespoke fabrication — sculptural object" },
+  { src: "/images/bespoke/7.jpg", alt: "YET:FAB experimental fabrication — 3D-printed design" },
+  { src: "/images/bespoke/8.jpg", alt: "YET:FAB studio — bespoke 3D-printed object, Israel" },
+  { src: "/images/bespoke/ADA_02.jpg", alt: "YET:FAB × ADA collaboration — bespoke 3D-printed piece" },
+  { src: "/images/bespoke/ADA_YET_7.jpg", alt: "YET:FAB × ADA — custom fabrication project" },
 ];
 
 export default function BespokeCarousel() {
@@ -31,9 +31,9 @@ export default function BespokeCarousel() {
 
   return (
     <section className="relative w-full overflow-hidden" style={{ aspectRatio: "16/7" }}>
-      {SLIDES.map((src, i) => (
+      {SLIDES.map((slide, i) => (
         <div
-          key={src}
+          key={slide.src}
           className="absolute inset-0"
           style={{
             opacity: i === current ? 1 : 0,
@@ -42,8 +42,8 @@ export default function BespokeCarousel() {
           }}
         >
           <Img
-            src={src}
-            alt="YET:FAB bespoke fabrication"
+            src={slide.src}
+            alt={slide.alt}
             fill
             className="object-cover"
             priority={i === 0}

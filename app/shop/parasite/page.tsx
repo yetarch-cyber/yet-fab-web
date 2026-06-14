@@ -36,7 +36,7 @@ const GALLERY = [
   },
   {
     src: "/images/shop/parasite/241005_YET_0169_ik copy.jpg",
-    alt: "PARASITE — detail",
+    alt: "PARASITE — sculptural 3D-printed form on furniture surface",
     ratio: "16/9",
   },
   {
@@ -51,12 +51,12 @@ const GALLERY = [
   },
   {
     src: "/images/shop/parasite/241005_YET_0157_ik copy.jpg",
-    alt: "PARASITE — detail",
+    alt: "PARASITE — organic 3D-printed addition, side view",
     ratio: "16/9",
   },
   {
     src: "/images/shop/parasite/241005_YET_0219_ik copy.jpg",
-    alt: "PARASITE — detail",
+    alt: "PARASITE — bespoke sculptural element, close-up",
     ratio: "16/9",
   },
 ];
