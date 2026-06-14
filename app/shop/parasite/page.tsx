@@ -56,9 +56,9 @@ export default function ParasitePage() {
   return (
     <main>
       {/* First section: 1 col text + 3 col image */}
-      <section className="grid grid-cols-1 md:grid-cols-4 min-h-screen">
+      <section className="grid grid-cols-1 md:grid-cols-4 md:h-[1080px]">
         {/* Col 1: name + description */}
-        <div className="flex flex-col gap-5 px-5 md:px-8 pt-[100px] pb-10 md:pt-[110px]">
+        <div className="flex flex-col gap-5 px-5 md:px-8 pt-[100px] pb-10 md:pt-[110px] overflow-y-auto">
           <p className="text-[0.6rem] tracking-[0.12em] text-[#888] uppercase">
             <Link href="/shop" className="hover:text-[#2222FF] transition-colors">
               Shop
