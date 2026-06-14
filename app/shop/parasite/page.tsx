@@ -206,7 +206,7 @@ export default function ParasitePage() {
         </div>
         <div className="flex flex-col items-start md:items-end gap-5">
           <Link
-            href="/contact"
+            href="/shop/parasite/inquiry"
             className="bg-[#2222FF] text-white text-[0.6rem] tracking-[0.18em] uppercase px-10 py-4 rounded-full hover:opacity-90 transition-opacity"
           >
             CONTACT US
