@@ -148,10 +148,10 @@ export default function AlherdFloorPage() {
       {/* Full-screen scale shot */}
       <div className="relative w-full h-screen">
         <Img
-          src="/images/shop/alherd-floor/250829_YET_Lamp_0098_ik_F.jpg"
+          src="/images/shop/alherd-floor/IMG_2313.JPG"
           alt="ALHERD Floor Lamp — scale reference"
           fill
-          className="object-cover object-top"
+          className="object-cover"
           sizes="100vw"
         />
       </div>
