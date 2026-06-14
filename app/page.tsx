@@ -41,11 +41,11 @@ const SHOP_PREVIEW = [
     href: "/shop/alherd-table",
   },
   {
-    src: "/images/shop-preview/Firefly_Gemini Flash (2).png",
-    alt: "RAMKOL speaker — YET:FAB",
-    name: "RAMKOL",
-    sub: "Speaker",
-    href: "/shop",
+    src: "/images/shop/alherd-floor/250829_YET_Lamp_0094_ik_F.jpg",
+    alt: "ALHERD floor lamp — YET:FAB",
+    name: "ALHERD",
+    sub: "Floor lamp",
+    href: "/shop/alherd-floor",
   },
 ];
 

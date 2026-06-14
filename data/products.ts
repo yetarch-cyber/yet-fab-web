@@ -52,7 +52,7 @@ export const products: Product[] = [
     description:
       "3D-printed floor lamp with organic perforated structure. Warm light filters through the latticed shell.",
     image: "/images/shop/YET_10_2 (1) copy.jpg",
-    shopUrl: "#",
+    shopUrl: "/shop/alherd-floor",
   },
   {
     id: "ramkol-1",
