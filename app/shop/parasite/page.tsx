@@ -109,8 +109,8 @@ export default function ParasitePage() {
         {/* Cols 2-4: hero image */}
         <div className="md:col-span-3 relative min-h-[50vh] md:min-h-full">
           <Img
-            src="/images/shop/parasite/241005_YET_0201_ik copy.jpg"
-            alt="PARASITE — black sculptural intervention on cabinet"
+            src="/images/shop/parasite/241005_YET_0063_ik copy.jpg"
+            alt="PARASITE — surface texture detail, lit warm"
             fill
             className="object-contain"
             priority
