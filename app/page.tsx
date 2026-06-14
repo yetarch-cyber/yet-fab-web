@@ -20,11 +20,11 @@ const SHOP_PREVIEW = [
     href: "/shop",
   },
   {
-    src: "/images/shop-preview/241005_YET_0129_ik copy.jpg",
-    alt: "PARASITE — YET:FAB artistic object",
+    src: "/images/shop/parasite/241005_YET_0201_ik copy.jpg",
+    alt: "PARASITE — YET:FAB bespoke object",
     name: "PARASITE",
-    sub: "Artistic object",
-    href: "/shop",
+    sub: "Bespoke object",
+    href: "/shop/parasite",
   },
   {
     src: "/images/shop-preview/250829_YET_Lamp_0144_ik_F.jpg",

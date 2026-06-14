@@ -19,7 +19,7 @@ export const products: Product[] = [
     description:
       "Organic 3D-printed sculptural object. Experimental form that inhabits and transforms its surroundings.",
     image: "/images/shop/241005_YET_0129_ik copy.jpg",
-    shopUrl: "#",
+    shopUrl: "/shop/parasite",
   },
   {
     id: "alherd-pendant",
