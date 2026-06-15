@@ -52,6 +52,14 @@ export default function Footer() {
           >
             LINKEDIN
           </Link>
+          <Link
+            href="https://www.facebook.com/yetfab"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[0.55rem] tracking-[0.08em] text-[#888] hover:text-[#2222FF] transition-colors"
+          >
+            FACEBOOK
+          </Link>
         </div>
       </div>
 
