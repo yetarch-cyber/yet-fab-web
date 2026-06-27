@@ -123,13 +123,13 @@ export default function ThickPage() {
               note: "Transparent PETG",
             },
             {
-              src: "/images/shop/thick/240523_candleholder_0067_ik_F.jpg",
+              src: "/images/shop/thick/240523_candleholder_0039_ik_F.jpg",
               alt: "THICK candleholder — neon green",
               label: "Neon Green",
               note: "Vivid electric green",
             },
             {
-              src: "/images/shop/thick/240523_candleholder_0078_ik_F.jpg",
+              src: "/images/shop/thick/240523_candleholder_0040_ik_F.jpg",
               alt: "THICK candleholder — neon pink",
               label: "Neon Pink",
               note: "Bold hot pink",
