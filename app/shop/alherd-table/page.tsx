@@ -3,17 +3,17 @@ import Link from "next/link";
 import Img from "@/components/Img";
 
 export const metadata: Metadata = {
-  title: "ALHERD Table Lamp — 3D-Printed Sculptural Lighting",
+  title: "ALHERD Table Lamp — Designer 3D-Printed Lighting | YET:FAB",
   description:
-    "The ALHERD Table Lamp by YET:FAB — compact sculptural table lamp with organic perforated form. Choice of cable colour and filter. Made to order in Tel Aviv.",
+    "Buy the ALHERD Table Lamp by YET:FAB — a compact sculptural table lamp 3D-printed in Tel Aviv. Organic translucent PETG form, warm diffused light, choice of cable colour. Designer table lamp made to order. ₪480.",
   alternates: { canonical: "https://www.yet-fab.com/shop/alherd-table" },
   openGraph: {
     type: "website",
     url: "https://www.yet-fab.com/shop/alherd-table",
     siteName: "YET:FAB",
-    title: "ALHERD Table Lamp — 3D-Printed Sculptural Lighting",
+    title: "ALHERD Table Lamp — Designer 3D-Printed Lighting | YET:FAB",
     description:
-      "The ALHERD Table Lamp by YET:FAB — compact sculptural table lamp with organic perforated form. Choice of cable colour and filter. Made to order in Tel Aviv.",
+      "Buy the ALHERD Table Lamp by YET:FAB — a compact sculptural table lamp 3D-printed in Tel Aviv. Organic translucent PETG form, warm diffused light. Made to order. ₪480.",
     images: [{ url: "/images/shop/250829_YET_Lamp_0231_ik_F.jpg", alt: "ALHERD Table Lamp by YET:FAB" }],
   },
 };
@@ -40,6 +40,27 @@ const GALLERY = [
 export default function AlherdTablePage() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "ALHERD Table Lamp",
+            description:
+              "Compact sculptural table lamp 3D-printed in translucent PETG. Organic perforated form, warm diffused light, choice of cable colour. Made to order in Tel Aviv by YET:FAB.",
+            image: "https://www.yet-fab.com/images/shop/250829_YET_Lamp_0231_ik_F.jpg",
+            brand: { "@type": "Brand", name: "YET:FAB" },
+            offers: {
+              "@type": "Offer",
+              price: "480",
+              priceCurrency: "ILS",
+              availability: "https://schema.org/InStock",
+              url: "https://www.yet-fab.com/shop/alherd-table",
+            },
+          }),
+        }}
+      />
       {/* First section: 1 col text + 3 col image */}
       <section className="grid grid-cols-1 md:grid-cols-4 min-h-screen">
         {/* Col 1: name + description */}

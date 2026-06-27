@@ -3,17 +3,17 @@ import Link from "next/link";
 import Img from "@/components/Img";
 
 export const metadata: Metadata = {
-  title: "ALHERD Floor Lamp — 3D-Printed Sculptural Lighting",
+  title: "ALHERD Floor Lamp — Designer 3D-Printed Lighting | YET:FAB",
   description:
-    "The ALHERD Floor Lamp by YET:FAB — vertical light sculpture in natural or gradient finish. 130 or 160 cm, integrated LED, made to order in Tel Aviv. ₪6,600.",
+    "Buy the ALHERD Floor Lamp by YET:FAB — a vertical light sculpture 3D-printed in Tel Aviv. Translucent PETG, integrated LED, 130–160 cm, natural or gradient finish. Designer floor lamp made to order. ₪6,600.",
   alternates: { canonical: "https://www.yet-fab.com/shop/alherd-floor" },
   openGraph: {
     type: "website",
     url: "https://www.yet-fab.com/shop/alherd-floor",
     siteName: "YET:FAB",
-    title: "ALHERD Floor Lamp — 3D-Printed Sculptural Lighting",
+    title: "ALHERD Floor Lamp — Designer 3D-Printed Lighting | YET:FAB",
     description:
-      "The ALHERD Floor Lamp by YET:FAB — vertical light sculpture in natural or gradient finish. 130 or 160 cm, integrated LED, made to order in Tel Aviv. ₪6,600.",
+      "Buy the ALHERD Floor Lamp by YET:FAB — a vertical light sculpture 3D-printed in Tel Aviv. Translucent PETG, integrated LED, 130–160 cm. Designer floor lamp made to order. ₪6,600.",
     images: [{ url: "/images/shop/alherd-floor/250829_YET_Lamp_0098_ik_F.jpg", alt: "ALHERD Floor Lamp by YET:FAB" }],
   },
 };
@@ -40,6 +40,27 @@ const GALLERY = [
 export default function AlherdFloorPage() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "ALHERD Floor Lamp",
+            description:
+              "Vertical light sculpture 3D-printed in translucent PETG. Integrated LED, 130–160 cm, natural or gradient finish. Made to order in Tel Aviv by YET:FAB.",
+            image: "https://www.yet-fab.com/images/shop/alherd-floor/250829_YET_Lamp_0098_ik_F.jpg",
+            brand: { "@type": "Brand", name: "YET:FAB" },
+            offers: {
+              "@type": "Offer",
+              price: "6600",
+              priceCurrency: "ILS",
+              availability: "https://schema.org/InStock",
+              url: "https://www.yet-fab.com/shop/alherd-floor",
+            },
+          }),
+        }}
+      />
       {/* First section: 1 col text + 3 col image */}
       <section className="grid grid-cols-1 md:grid-cols-4 min-h-screen">
         {/* Col 1: name + description */}

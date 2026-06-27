@@ -3,17 +3,17 @@ import Link from "next/link";
 import Img from "@/components/Img";
 
 export const metadata: Metadata = {
-  title: "ALHERD Pendant Lamp — 3D-Printed Sculptural Lighting",
+  title: "ALHERD Pendant Lamp — Designer 3D-Printed Lighting | YET:FAB",
   description:
-    "The ALHERD Pendant Lamp by YET:FAB — suspended sculptural pendant in natural or gradient finish. 130 cm, integrated LED, made to order. ₪6,700.",
+    "Buy the ALHERD Pendant Lamp by YET:FAB — an organic sculptural pendant light 3D-printed in Tel Aviv. Translucent PETG shell, integrated LED, 130 cm, natural or gradient finish. Made to order. ₪6,700.",
   alternates: { canonical: "https://www.yet-fab.com/shop/alherd-pendant" },
   openGraph: {
     type: "website",
     url: "https://www.yet-fab.com/shop/alherd-pendant",
     siteName: "YET:FAB",
-    title: "ALHERD Pendant Lamp — 3D-Printed Sculptural Lighting",
+    title: "ALHERD Pendant Lamp — Designer 3D-Printed Lighting | YET:FAB",
     description:
-      "The ALHERD Pendant Lamp by YET:FAB — suspended sculptural pendant in natural or gradient finish. 130 cm, integrated LED, made to order. ₪6,700.",
+      "Buy the ALHERD Pendant Lamp by YET:FAB — an organic sculptural pendant light 3D-printed in Tel Aviv. Translucent PETG shell, integrated LED, 130 cm. Made to order. ₪6,700.",
     images: [{ url: "/images/shop-preview/250829_YET_Lamp_0144_ik_F.jpg", alt: "ALHERD Pendant Lamp by YET:FAB" }],
   },
 };
@@ -40,6 +40,27 @@ const GALLERY = [
 export default function AlherdPendantPage() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "ALHERD Pendant Lamp",
+            description:
+              "Organic sculptural pendant lamp 3D-printed in translucent PETG. Integrated LED, 130 cm, natural or gradient finish. Made to order in Tel Aviv by YET:FAB.",
+            image: "https://www.yet-fab.com/images/shop-preview/250829_YET_Lamp_0144_ik_F.jpg",
+            brand: { "@type": "Brand", name: "YET:FAB" },
+            offers: {
+              "@type": "Offer",
+              price: "6700",
+              priceCurrency: "ILS",
+              availability: "https://schema.org/InStock",
+              url: "https://www.yet-fab.com/shop/alherd-pendant",
+            },
+          }),
+        }}
+      />
       {/* First section: 1 col text + 3 col image */}
       <section className="grid grid-cols-1 md:grid-cols-4 min-h-screen">
         {/* Col 1: name + description */}

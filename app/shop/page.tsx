@@ -4,15 +4,25 @@ import Img from "@/components/Img";
 import { products } from "@/data/products";
 
 export const metadata: Metadata = {
-  title: "Shop — 3D-Printed Objects & Lighting",
+  title: "Shop — Designer 3D-Printed Lamps & Objects | YET:FAB",
   description:
-    "Browse and shop YET:FAB products — ALHERD lamps, BAKLAN, THICK candleholders, PARASITE, and more 3D-printed objects from Tel Aviv.",
+    "Shop designer 3D-printed lamps and objects by YET:FAB — ALHERD pendant, table and floor lamps, THICK candleholders, PARASITE sculptural objects. Made to order in Tel Aviv.",
   alternates: { canonical: "https://www.yet-fab.com/shop" },
+  openGraph: {
+    type: "website",
+    url: "https://www.yet-fab.com/shop",
+    siteName: "YET:FAB",
+    title: "Shop — Designer 3D-Printed Lamps & Objects | YET:FAB",
+    description:
+      "Shop designer 3D-printed lamps and objects by YET:FAB — ALHERD pendant, table and floor lamps, THICK candleholders, PARASITE sculptural objects. Made to order in Tel Aviv.",
+    images: [{ url: "/og.jpg", alt: "YET:FAB shop — designer 3D-printed objects" }],
+  },
 };
 
 export default function ShopPage() {
   return (
     <main className="pt-[90px]">
+      <h1 className="sr-only">Shop — Designer 3D-Printed Lamps & Objects by YET:FAB</h1>
       {/* Blue grid — edge to edge */}
       <div className="border-t border-l border-[#2222FF]">
         <div className="grid grid-cols-2 md:grid-cols-4">
