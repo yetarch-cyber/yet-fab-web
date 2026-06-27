@@ -14,19 +14,19 @@ export const metadata: Metadata = {
     title: "THICK Candleholder — 3D-Printed Sculptural Object",
     description:
       "THICK by YET:FAB — a 3D-printed sculptural candleholder in transparent PETG. Organic amorphic form, metal cup insert, fits standard candles. Made to order in Tel Aviv. ₪190.",
-    images: [{ url: "/images/shop/candleholder/240523_candleholder_0085_ik_F.jpg", alt: "THICK candleholder by YET:FAB" }],
+    images: [{ url: "/images/shop/thick/240523_candleholder_0085_ik_F.jpg", alt: "THICK candleholder by YET:FAB" }],
   },
 };
 
 const GALLERY = [
-  { src: "/images/shop/candleholder/240523_candleholder_0039_ik_F.jpg", alt: "THICK candleholder — organic form detail", ratio: "3/4" },
-  { src: "/images/shop/candleholder/240523_candleholder_0040_ik_F.jpg", alt: "THICK candleholder — close-up surface texture", ratio: "3/4" },
-  { src: "/images/shop/candleholder/240523_candleholder_0052_ik_F.jpg", alt: "THICK candleholder — top view", ratio: "3/4" },
-  { src: "/images/shop/candleholder/240523_candleholder_0087_ik_F.jpg", alt: "THICK candleholder — lit candle, warm glow", ratio: "3/4" },
-  { src: "/images/shop/candleholder/240523_candleholder_0090_ik_F.jpg", alt: "THICK candleholder — studio shot", ratio: "3/4" },
-  { src: "/images/shop/candleholder/240523_candleholder_0093_ik_F.jpg", alt: "THICK candleholder — form and shadow", ratio: "3/4" },
-  { src: "/images/shop/candleholder/240523_candleholder_0095_ik_F.jpg", alt: "THICK candleholder — atmospheric shot", ratio: "3/4" },
-  { src: "/images/shop/candleholder/240523_candleholder_0126_ik_F.jpg", alt: "THICK candleholder — profile view", ratio: "3/4" },
+  { src: "/images/shop/thick/240523_candleholder_0039_ik_F.jpg", alt: "THICK candleholder — organic form detail", ratio: "3/4" },
+  { src: "/images/shop/thick/240523_candleholder_0040_ik_F.jpg", alt: "THICK candleholder — close-up surface texture", ratio: "3/4" },
+  { src: "/images/shop/thick/240523_candleholder_0052_ik_F.jpg", alt: "THICK candleholder — top view", ratio: "3/4" },
+  { src: "/images/shop/thick/240523_candleholder_0087_ik_F.jpg", alt: "THICK candleholder — lit candle, warm glow", ratio: "3/4" },
+  { src: "/images/shop/thick/240523_candleholder_0090_ik_F.jpg", alt: "THICK candleholder — studio shot", ratio: "3/4" },
+  { src: "/images/shop/thick/240523_candleholder_0093_ik_F.jpg", alt: "THICK candleholder — form and shadow", ratio: "3/4" },
+  { src: "/images/shop/thick/240523_candleholder_0095_ik_F.jpg", alt: "THICK candleholder — atmospheric shot", ratio: "3/4" },
+  { src: "/images/shop/thick/240523_candleholder_0126_ik_F.jpg", alt: "THICK candleholder — profile view", ratio: "3/4" },
 ];
 
 export default function ThickPage() {
@@ -65,7 +65,7 @@ export default function ThickPage() {
 
         <div className="md:col-span-3 relative min-h-[50vh] md:min-h-full">
           <Img
-            src="/images/shop/candleholder/240523_candleholder_0085_ik_F.jpg"
+            src="/images/shop/thick/240523_candleholder_0085_ik_F.jpg"
             alt="THICK candleholder — hero shot"
             fill
             className="object-contain"
@@ -117,19 +117,19 @@ export default function ThickPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {[
             {
-              src: "/images/shop/candleholder/240523_candleholder_0036_ik_F.jpg",
+              src: "/images/shop/thick/240523_candleholder_0036_ik_F.jpg",
               alt: "THICK candleholder — clear transparent",
               label: "Clear",
               note: "Transparent PETG",
             },
             {
-              src: "/images/shop/candleholder/240523_candleholder_0067_ik_F.jpg",
+              src: "/images/shop/thick/240523_candleholder_0067_ik_F.jpg",
               alt: "THICK candleholder — neon green",
               label: "Neon Green",
               note: "Vivid electric green",
             },
             {
-              src: "/images/shop/candleholder/240523_candleholder_0078_ik_F.jpg",
+              src: "/images/shop/thick/240523_candleholder_0078_ik_F.jpg",
               alt: "THICK candleholder — neon pink",
               label: "Neon Pink",
               note: "Bold hot pink",
@@ -160,7 +160,7 @@ export default function ThickPage() {
       {/* Full-screen */}
       <div className="relative w-full h-screen">
         <Img
-          src="/images/shop/candleholder/240523_candleholder_0157_ik_F.jpg"
+          src="/images/shop/thick/240523_candleholder_0157_ik_F.jpg"
           alt="THICK candleholder — atmospheric scene"
           fill
           className="object-cover"
