@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        // Cache all static images for 1 year — immutable means CDN never re-fetches
+        // Cache all static images and assets for 1 year — immutable means CDN never re-fetches
         source: "/images/(.*)",
         headers: [
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
@@ -25,3 +25,4 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
