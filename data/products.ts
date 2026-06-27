@@ -95,7 +95,7 @@ export const products: Product[] = [
     type: "Candleholder",
     description:
       "Structural lattice candleholder. Bold, architectural form in matte white ceramic-finish resin.",
-    image: "/images/shop/240523_candleholder_0085_ik_F.jpg",
-    shopUrl: "#",
+    image: "/images/shop/candleholder/240523_candleholder_0085_ik_F.jpg",
+    shopUrl: "/shop/thick",
   },
 ];

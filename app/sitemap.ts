@@ -15,5 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/shop/alherd-table`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
     { url: `${base}/shop/alherd-floor`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
     { url: `${base}/shop/parasite`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/shop/thick`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
   ];
 }

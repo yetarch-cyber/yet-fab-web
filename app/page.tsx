@@ -13,11 +13,11 @@ export const metadata: Metadata = {
 
 const SHOP_PREVIEW = [
   {
-    src: "/images/shop-preview/240523_candleholder_0095_ik_F.jpg",
+    src: "/images/shop/candleholder/240523_candleholder_0085_ik_F.jpg",
     alt: "THICK candleholder — YET:FAB",
     name: "THICK",
     sub: "Candleholder",
-    href: "/shop",
+    href: "/shop/thick",
   },
   {
     src: "/images/shop/parasite/241005_YET_0201_ik copy.jpg",
