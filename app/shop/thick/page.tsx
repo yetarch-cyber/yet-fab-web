@@ -19,8 +19,8 @@ export const metadata: Metadata = {
 };
 
 const GALLERY = [
-  { src: "/images/shop/thick/240523_candleholder_0039_ik_F.jpg", alt: "THICK candleholder — organic form detail", ratio: "3/4" },
-  { src: "/images/shop/thick/240523_candleholder_0040_ik_F.jpg", alt: "THICK candleholder — close-up surface texture", ratio: "3/4" },
+  { src: "/images/shop/thick/240523_candleholder_0067_ik_F.jpg", alt: "THICK candleholder — organic form detail", ratio: "3/4" },
+  { src: "/images/shop/thick/240523_candleholder_0134_ik_F.jpg", alt: "THICK candleholder — close-up surface texture", ratio: "3/4" },
   { src: "/images/shop/thick/240523_candleholder_0052_ik_F.jpg", alt: "THICK candleholder — top view", ratio: "3/4" },
   { src: "/images/shop/thick/240523_candleholder_0087_ik_F.jpg", alt: "THICK candleholder — lit candle, warm glow", ratio: "3/4" },
   { src: "/images/shop/thick/240523_candleholder_0090_ik_F.jpg", alt: "THICK candleholder — studio shot", ratio: "3/4" },
