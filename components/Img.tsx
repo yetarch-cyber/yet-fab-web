@@ -10,7 +10,6 @@ interface ImgProps {
   priority?: boolean;
   sizes?: string;
   quality?: number;
-  unoptimized?: boolean;
 }
 
 export default function Img({
@@ -21,7 +20,6 @@ export default function Img({
   priority,
   sizes,
   quality,
-  unoptimized,
 }: ImgProps) {
   const [error, setError] = useState(false);
 
@@ -51,7 +49,7 @@ export default function Img({
         priority={priority}
         sizes={sizes}
         quality={quality ?? 90}
-        unoptimized={unoptimized}
+        unoptimized
         onError={() => setError(true)}
       />
     );
@@ -67,7 +65,7 @@ export default function Img({
       className={`w-full h-auto ${className ?? ""}`}
       priority={priority}
       quality={quality ?? 90}
-      unoptimized={unoptimized}
+      unoptimized
       onError={() => setError(true)}
     />
   );
