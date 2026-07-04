@@ -7,12 +7,7 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: "/alherdfloorlampscultural:slug*",
-        destination: "/shop/alherd-floor",
-        permanent: true,
-      },
-      {
-        source: "/yet.contact/:slug*",
+        source: "/yet.contact",
         destination: "/contact",
         permanent: true,
       },
