@@ -4,6 +4,20 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  async redirects() {
+    return [
+      {
+        source: "/alherdfloorlampscultural:slug*",
+        destination: "/shop/alherd-floor",
+        permanent: true,
+      },
+      {
+        source: "/yet.contact/:slug*",
+        destination: "/contact",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
