@@ -110,8 +110,8 @@ export default function TurbinePage() {
         ))}
       </div>
 
-      {/* Technical specs */}
-      <div className="mx-5 md:mx-[100px] py-10 border-b border-[#DCDAD5] grid grid-cols-1 md:grid-cols-2 gap-10">
+      {/* Technical specs + diagrams */}
+      <div className="mx-5 md:mx-[100px] py-10 border-b border-[#DCDAD5] grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="flex flex-col gap-4">
           <p className="text-[0.58rem] tracking-[0.18em] text-[#2222FF] uppercase mb-2">System</p>
           {[
@@ -142,6 +142,29 @@ export default function TurbinePage() {
             </div>
           ))}
         </div>
+        <div className="flex flex-col gap-2">
+          <p className="text-[0.58rem] tracking-[0.18em] text-[#2222FF] uppercase mb-2">Drawings</p>
+          <div className="grid grid-cols-2 gap-[10px]">
+            <div className="relative w-full" style={{ aspectRatio: "3/4" }}>
+              <Img
+                src="/images/shop/ramkol-1/Frame 494.jpg"
+                alt="TURBINE speaker — front elevation technical drawing"
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 50vw, 15vw"
+              />
+            </div>
+            <div className="relative w-full" style={{ aspectRatio: "3/4" }}>
+              <Img
+                src="/images/shop/ramkol-1/Frame 496.jpg"
+                alt="TURBINE speaker — side elevation technical drawing"
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 50vw, 15vw"
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Colour options */}
@@ -160,31 +183,6 @@ export default function TurbinePage() {
           ))}
         </div>
         <p className="mt-6 text-[0.6rem] tracking-[0.1em] text-[#888]">Height and colour can be customised on request</p>
-      </section>
-
-      {/* Technical drawings */}
-      <section className="px-5 md:px-[100px] py-14 border-b border-[#DCDAD5]">
-        <p className="text-[0.58rem] tracking-[0.18em] text-[#2222FF] uppercase mb-8">Technical drawings</p>
-        <div className="grid grid-cols-2 gap-6 max-w-[75%]">
-          <div className="relative w-full" style={{ aspectRatio: "3/4" }}>
-            <Img
-              src="/images/shop/ramkol-1/Frame 494.jpg"
-              alt="TURBINE speaker — front elevation technical drawing"
-              fill
-              className="object-contain"
-              sizes="(max-width: 768px) 50vw, 25vw"
-            />
-          </div>
-          <div className="relative w-full" style={{ aspectRatio: "3/4" }}>
-            <Img
-              src="/images/shop/ramkol-1/Frame 496.jpg"
-              alt="TURBINE speaker — side elevation technical drawing"
-              fill
-              className="object-contain"
-              sizes="(max-width: 768px) 50vw, 25vw"
-            />
-          </div>
-        </div>
       </section>
 
       {/* Gallery */}
