@@ -55,8 +55,8 @@ export default function BespokeCarousel() {
       {/* Overlay */}
       <div className="absolute inset-0 bg-[#0A0A0A]/20 z-20" />
 
-      {/* CTA */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-30">
+      {/* Desktop CTA — overlaid on image */}
+      <div className="hidden md:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-2 z-30">
         <p className="text-[0.52rem] tracking-[0.22em] text-white/80 uppercase">
           Digital Fabrication
         </p>
@@ -68,5 +68,18 @@ export default function BespokeCarousel() {
         </Link>
       </div>
     </section>
+
+    {/* Mobile CTA — below image */}
+    <div className="md:hidden flex flex-col items-center gap-3 py-8">
+      <p className="text-[0.52rem] tracking-[0.22em] text-[#888] uppercase">
+        Digital Fabrication
+      </p>
+      <Link
+        href="/services"
+        className="bg-[#2222FF] text-white text-[0.6rem] tracking-[0.16em] uppercase px-8 py-2.5 rounded-full hover:opacity-90 transition-opacity"
+      >
+        SERVICES
+      </Link>
+    </div>
   );
 }
