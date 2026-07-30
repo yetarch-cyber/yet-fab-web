@@ -62,7 +62,7 @@ export default function ContactPage() {
 
         {/* Image — native ratio (2264x3019), 1080px tall, flush to right edge */}
         <div
-          className="relative w-full md:w-auto md:h-[1080px] mb-16 md:mb-0"
+          className="relative w-full md:w-auto md:h-[1080px] mt-10 md:mt-0 mb-16 md:mb-0"
           style={{ aspectRatio: "2264 / 3019" }}
         >
           <Img
