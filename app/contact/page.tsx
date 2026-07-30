@@ -13,8 +13,8 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen pb-20">
       <div className="grid grid-cols-1 md:grid-cols-[minmax(320px,1fr)_auto]">
-        {/* Info column — offset right / down */}
-        <div className="flex flex-col gap-6 px-5 md:pl-[100px] md:pr-10 pt-[120px] md:pt-[200px]">
+        {/* Info column */}
+        <div className="flex flex-col items-center md:items-start gap-6 px-5 md:pl-[100px] md:pr-10 pt-[120px] md:pt-[200px] text-center md:text-left">
           <p className="text-[0.72rem] tracking-[0.06em] font-medium text-[#0A0A0A]">
             YET:FAB
           </p>
@@ -33,7 +33,7 @@ export default function ContactPage() {
           >
             +972-58-629-7943
           </Link>
-          <div className="flex flex-col gap-2 mt-2">
+          <div className="flex flex-col gap-2 mt-2 items-center md:items-start">
             <Link
               href="https://www.instagram.com/yetfab/"
               target="_blank"
@@ -54,7 +54,7 @@ export default function ContactPage() {
 
           <Link
             href="/contact/inquiry"
-            className="mt-6 inline-block bg-[#2222FF] text-white text-[0.6rem] tracking-[0.16em] uppercase px-8 py-3 rounded-full hover:opacity-90 transition-opacity w-fit"
+            className="mt-6 inline-block bg-[#2222FF] text-white text-[0.6rem] tracking-[0.16em] uppercase px-8 py-3 rounded-full hover:opacity-90 transition-opacity"
           >
             SEND INQUIRY
           </Link>
@@ -62,7 +62,7 @@ export default function ContactPage() {
 
         {/* Image — native ratio (2264x3019), 1080px tall, flush to right edge */}
         <div
-          className="relative w-full md:w-auto md:h-[1080px]"
+          className="relative w-full md:w-auto md:h-[1080px] mb-16 md:mb-0"
           style={{ aspectRatio: "2264 / 3019" }}
         >
           <Img
