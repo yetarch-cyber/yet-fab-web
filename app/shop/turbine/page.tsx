@@ -53,8 +53,8 @@ export default function TurbinePage() {
       />
 
       {/* Hero */}
-      <section className="grid grid-cols-1 md:grid-cols-5 min-h-screen">
-        <div className="flex flex-col gap-5 px-5 md:px-8 pt-[100px] pb-10 md:pt-[110px]">
+      <section className="grid grid-cols-1 md:grid-cols-[1.1fr_1fr_1fr] min-h-screen">
+        <div className="flex flex-col gap-5 px-5 md:px-8 pt-[100px] pb-10 md:pt-[110px] md:z-10">
           <p className="text-[0.6rem] tracking-[0.12em] text-[#888] uppercase">
             <Link href="/shop" className="hover:text-[#2222FF] transition-colors">Shop</Link>
             {" / "}Speaker
@@ -72,23 +72,23 @@ export default function TurbinePage() {
           <p className="text-[0.7rem] leading-[2] text-[#888]">Designed and fabricated by YET.</p>
         </div>
 
-        <div className="md:col-span-2 relative min-h-[50vh] md:min-h-full">
+        <div className="relative min-h-[50vh] md:min-h-0 overflow-hidden">
           <Img
             src="/images/shop/ramkol-1/Firefly_Gemini Flash (7).png"
             alt="TURBINE Floor Speaker by YET:FAB — front view"
             fill
-            className="object-contain"
+            className="object-cover"
             priority
             sizes="(max-width: 768px) 100vw, 40vw"
           />
         </div>
 
-        <div className="md:col-span-2 relative min-h-[50vh] md:min-h-full">
+        <div className="relative min-h-[50vh] md:min-h-0 overflow-hidden">
           <Img
             src="/images/shop/ramkol-1/Firefly_Gemini Flash (2)2.png"
             alt="TURBINE Floor Speaker by YET:FAB — side view"
             fill
-            className="object-contain"
+            className="object-cover"
             priority
             sizes="(max-width: 768px) 100vw, 40vw"
           />
@@ -111,52 +111,62 @@ export default function TurbinePage() {
       </div>
 
       {/* Technical specs + diagrams */}
-      <div className="mx-5 md:mx-[100px] py-10 border-b border-[#DCDAD5] grid grid-cols-1 md:grid-cols-[1fr_1fr_1.5fr] gap-10">
-        <div className="flex flex-col gap-4">
-          <p className="text-[0.58rem] tracking-[0.18em] text-[#2222FF] uppercase mb-2">System</p>
-          {[
-            { label: "Type", value: "Floor-standing passive speaker" },
-            { label: "Configuration", value: "2-way with passive crossover" },
-            { label: "Enclosure volume", value: "10 L" },
-            { label: "Enclosures", value: "3D-printed polymer" },
-            { label: "Structure", value: "Brushed stainless-steel tube" },
-            { label: "Base", value: "Stainless-steel plate" },
-          ].map((s) => (
-            <div key={s.label} className="flex gap-3">
-              <p className="text-[0.6rem] tracking-[0.08em] text-[#888] uppercase w-36 shrink-0">{s.label}</p>
-              <p className="text-[0.7rem] text-[#0A0A0A]">{s.value}</p>
-            </div>
-          ))}
+      <div className="mx-5 md:mx-[100px] py-10 border-b border-[#DCDAD5] grid grid-cols-1 md:grid-cols-2 gap-10">
+        {/* Left: specs */}
+        <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-4">
+            <p className="text-[0.58rem] tracking-[0.18em] text-[#2222FF] uppercase mb-2">System</p>
+            {[
+              { label: "Type", value: "Floor-standing passive speaker" },
+              { label: "Configuration", value: "2-way with passive crossover" },
+              { label: "Enclosure volume", value: "10 L" },
+              { label: "Enclosures", value: "3D-printed polymer" },
+              { label: "Structure", value: "Brushed stainless-steel tube" },
+              { label: "Base", value: "Stainless-steel plate" },
+            ].map((s) => (
+              <div key={s.label} className="flex gap-3">
+                <p className="text-[0.6rem] tracking-[0.08em] text-[#888] uppercase w-36 shrink-0">{s.label}</p>
+                <p className="text-[0.7rem] text-[#0A0A0A]">{s.value}</p>
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-col gap-4">
+            <p className="text-[0.58rem] tracking-[0.18em] text-[#2222FF] uppercase mb-2">Drivers</p>
+            {[
+              { label: "Midbass", value: "Zaph|Audio ZA14W08 — 5″ aluminum-cone woofer" },
+              { label: "Tweeter", value: "Vifa DQ25SC16-04 — 1″ titanium-dome" },
+              { label: "Frequency", value: "52 Hz – 20 kHz" },
+              { label: "Amplification", value: "External amplifier required" },
+            ].map((s) => (
+              <div key={s.label} className="flex gap-3">
+                <p className="text-[0.6rem] tracking-[0.08em] text-[#888] uppercase w-36 shrink-0">{s.label}</p>
+                <p className="text-[0.7rem] text-[#0A0A0A]">{s.value}</p>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="flex flex-col gap-4">
-          <p className="text-[0.58rem] tracking-[0.18em] text-[#2222FF] uppercase mb-2">Drivers</p>
-          {[
-            { label: "Midbass", value: "Zaph|Audio ZA14W08 — 5″ aluminum-cone woofer" },
-            { label: "Tweeter", value: "Vifa DQ25SC16-04 — 1″ titanium-dome" },
-            { label: "Frequency", value: "52 Hz – 20 kHz" },
-            { label: "Amplification", value: "External amplifier required" },
-          ].map((s) => (
-            <div key={s.label} className="flex gap-3">
-              <p className="text-[0.6rem] tracking-[0.08em] text-[#888] uppercase w-36 shrink-0">{s.label}</p>
-              <p className="text-[0.7rem] text-[#0A0A0A]">{s.value}</p>
-            </div>
-          ))}
-        </div>
+        {/* Right: diagrams */}
         <div className="flex flex-col gap-2">
           <p className="text-[0.58rem] tracking-[0.18em] text-[#2222FF] uppercase mb-2">Drawings</p>
-          <div className="flex gap-0">
-            <Img
-              src="/images/shop/ramkol-1/Frame 494.jpg"
-              alt="TURBINE speaker — front elevation technical drawing"
-              className="w-1/2"
-              sizes="15vw"
-            />
-            <Img
-              src="/images/shop/ramkol-1/Frame 496.jpg"
-              alt="TURBINE speaker — side elevation technical drawing"
-              className="w-1/2"
-              sizes="15vw"
-            />
+          <div className="grid grid-cols-2">
+            <div className="relative w-full" style={{ aspectRatio: "3/4" }}>
+              <Img
+                src="/images/shop/ramkol-1/Frame 494.jpg"
+                alt="TURBINE speaker — front elevation technical drawing"
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 45vw, 25vw"
+              />
+            </div>
+            <div className="relative w-full" style={{ aspectRatio: "3/4" }}>
+              <Img
+                src="/images/shop/ramkol-1/Frame 496.jpg"
+                alt="TURBINE speaker — side elevation technical drawing"
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 45vw, 25vw"
+              />
+            </div>
           </div>
         </div>
       </div>
