@@ -30,6 +30,7 @@ export default function BespokeCarousel() {
   }, []);
 
   return (
+    <>
     <section className="relative w-full overflow-hidden" style={{ aspectRatio: "16/7" }}>
       {SLIDES.map((slide, i) => (
         <div
@@ -81,5 +82,6 @@ export default function BespokeCarousel() {
         SERVICES
       </Link>
     </div>
+    </>
   );
 }
