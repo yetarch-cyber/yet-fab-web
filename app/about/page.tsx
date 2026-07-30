@@ -11,9 +11,21 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main>
-      <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
+      {/* Mobile: first photo */}
+      <div className="md:hidden relative w-full" style={{ minHeight: "60vw" }}>
+        <Img
+          src="/images/about/ADA_YET_3.jpg"
+          alt="YET:FAB team — fabrication studio in Tel Aviv"
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 md:min-h-screen">
         {/* Text column */}
-        <div className="pl-5 md:pl-[200px] pr-5 md:pr-10 pt-[290px] pb-16">
+        <div className="pl-5 md:pl-[200px] pr-5 md:pr-10 pt-8 md:pt-[290px] pb-16">
           <div className="flex flex-col gap-8 max-w-md">
             <p className="text-[0.75rem] leading-[2] text-[#0A0A0A]">
               At YET Architecture, we are an experimental practice dedicated to
@@ -54,18 +66,20 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Images column — 20% bigger */}
+        {/* Images column */}
         <div className="flex flex-col">
-          <div className="relative flex-1" style={{ minHeight: "60vh" }}>
+          {/* First photo: hidden on mobile (shown above), visible on desktop */}
+          <div className="hidden md:block relative flex-1" style={{ minHeight: "60vh" }}>
             <Img
               src="/images/about/ADA_YET_3.jpg"
               alt="YET:FAB team — fabrication studio in Tel Aviv"
               fill
               className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="50vw"
               priority
             />
           </div>
+          {/* Second photo: always visible */}
           <div className="relative flex-1" style={{ minHeight: "60vh" }}>
             <Img
               src="/images/about/ADA_YET_5.jpg"
