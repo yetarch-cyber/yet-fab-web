@@ -78,14 +78,14 @@ export const products: Product[] = [
   },
   {
     id: "baklan",
-    name: "BAKLAN",
+    name: "BACKLAN",
     prefix: "Table lamp",
-    displayName: '"BAKLAN"',
+    displayName: '"BACKLAN"',
     type: "Table lamp",
     description:
-      "Layered translucent 3D-printed shade with a cone silhouette and warm amber glow.",
-    image: "/images/shop/Firefly_Gemini Flash_here is images of 3d printed lamp. outer translucent layer with thick plastic layers  881560.png",
-    shopUrl: "#",
+      "Double-layer 3D-printed table lamp — translucent outer shell with warm orange inner core glow.",
+    image: "/images/shop/backlan/Firefly_Gemini Flash_here is images of 3d printed lamp. outer translucent layer with thick plastic layers  881560.png",
+    shopUrl: "/shop/backlan",
   },
   {
     id: "thick",

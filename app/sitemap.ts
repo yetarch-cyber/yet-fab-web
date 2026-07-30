@@ -18,5 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/shop/thick`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
     { url: `${base}/shop/turbine`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
     { url: `${base}/shop/turbine-ceiling`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
+    { url: `${base}/shop/backlan`, lastModified: now, changeFrequency: "monthly", priority: 0.85 },
   ];
 }
