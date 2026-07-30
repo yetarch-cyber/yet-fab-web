@@ -165,7 +165,7 @@ export default function TurbinePage() {
       {/* Technical drawings */}
       <section className="px-5 md:px-[100px] py-14 border-b border-[#DCDAD5]">
         <p className="text-[0.58rem] tracking-[0.18em] text-[#2222FF] uppercase mb-8">Technical drawings</p>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-2 gap-6 max-w-[75%]">
           <div className="relative w-full" style={{ aspectRatio: "3/4" }}>
             <Img
               src="/images/shop/ramkol-1/Frame 494.jpg"
