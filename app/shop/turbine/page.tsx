@@ -144,7 +144,7 @@ export default function TurbinePage() {
         </div>
         <div className="flex flex-col gap-2">
           <p className="text-[0.58rem] tracking-[0.18em] text-[#2222FF] uppercase mb-2">Drawings</p>
-          <div className="grid grid-cols-2 gap-[10px]">
+          <div className="grid grid-cols-2 gap-0">
             <div className="relative w-full" style={{ aspectRatio: "3/4" }}>
               <Img
                 src="/images/shop/ramkol-1/Frame 494.jpg"
