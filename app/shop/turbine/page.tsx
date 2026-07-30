@@ -165,23 +165,23 @@ export default function TurbinePage() {
       {/* Technical drawings */}
       <section className="px-5 md:px-[100px] py-14 border-b border-[#DCDAD5]">
         <p className="text-[0.58rem] tracking-[0.18em] text-[#2222FF] uppercase mb-8">Technical drawings</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="relative w-full bg-[#F5F4F2]" style={{ aspectRatio: "3/4" }}>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl">
+          <div className="relative w-full" style={{ aspectRatio: "3/4" }}>
             <Img
               src="/images/shop/ramkol-1/Frame 494.jpg"
               alt="TURBINE speaker — front elevation technical drawing"
               fill
-              className="object-contain p-6"
-              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-contain"
+              sizes="(max-width: 768px) 50vw, 25vw"
             />
           </div>
-          <div className="relative w-full bg-[#F5F4F2]" style={{ aspectRatio: "3/4" }}>
+          <div className="relative w-full" style={{ aspectRatio: "3/4" }}>
             <Img
               src="/images/shop/ramkol-1/Frame 496.jpg"
               alt="TURBINE speaker — side elevation technical drawing"
               fill
-              className="object-contain p-6"
-              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-contain"
+              sizes="(max-width: 768px) 50vw, 25vw"
             />
           </div>
         </div>
