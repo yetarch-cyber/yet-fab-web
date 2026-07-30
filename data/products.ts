@@ -67,14 +67,14 @@ export const products: Product[] = [
   },
   {
     id: "ramkol-2",
-    name: "RAMKOL",
-    prefix: "Speaker",
-    displayName: '"RAMKOL"',
-    type: "Speaker",
+    name: "TURBINE",
+    prefix: "Ceiling speaker",
+    displayName: '"TURBINE"',
+    type: "Ceiling speaker",
     description:
-      "3D-printed speaker — variant 2. Precision-fabricated acoustic object.",
-    image: "/images/shop/Firefly_Gemini Flash (1)34.png",
-    shopUrl: "#",
+      "Suspended 2-way speaker system with 3D-printed acoustic enclosures and brushed stainless-steel ceiling structure.",
+    image: "/images/shop/ramkol-2/Firefly_Gemini Flash (1)34.png",
+    shopUrl: "/shop/turbine-ceiling",
   },
   {
     id: "baklan",
