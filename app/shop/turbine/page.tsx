@@ -144,25 +144,19 @@ export default function TurbinePage() {
         </div>
         <div className="flex flex-col gap-2">
           <p className="text-[0.58rem] tracking-[0.18em] text-[#2222FF] uppercase mb-2">Drawings</p>
-          <div className="grid grid-cols-2 gap-0">
-            <div className="relative w-full" style={{ aspectRatio: "3/4" }}>
-              <Img
-                src="/images/shop/ramkol-1/Frame 494.jpg"
-                alt="TURBINE speaker — front elevation technical drawing"
-                fill
-                className="object-contain"
-                sizes="(max-width: 768px) 50vw, 15vw"
-              />
-            </div>
-            <div className="relative w-full" style={{ aspectRatio: "3/4" }}>
-              <Img
-                src="/images/shop/ramkol-1/Frame 496.jpg"
-                alt="TURBINE speaker — side elevation technical drawing"
-                fill
-                className="object-contain"
-                sizes="(max-width: 768px) 50vw, 15vw"
-              />
-            </div>
+          <div className="flex gap-0">
+            <Img
+              src="/images/shop/ramkol-1/Frame 494.jpg"
+              alt="TURBINE speaker — front elevation technical drawing"
+              className="w-1/2"
+              sizes="15vw"
+            />
+            <Img
+              src="/images/shop/ramkol-1/Frame 496.jpg"
+              alt="TURBINE speaker — side elevation technical drawing"
+              className="w-1/2"
+              sizes="15vw"
+            />
           </div>
         </div>
       </div>
