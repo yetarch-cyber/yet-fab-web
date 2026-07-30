@@ -44,6 +44,8 @@ export default function TurbinePage() {
             brand: { "@type": "Brand", name: "YET:FAB" },
             offers: {
               "@type": "Offer",
+              price: "13500",
+              priceCurrency: "ILS",
               availability: "https://schema.org/InStock",
               url: "https://www.yet-fab.com/shop/turbine",
             },
@@ -52,7 +54,7 @@ export default function TurbinePage() {
       />
 
       {/* Hero */}
-      <section className="grid grid-cols-1 md:grid-cols-4 min-h-screen">
+      <section className="grid grid-cols-1 md:grid-cols-5 min-h-screen">
         <div className="flex flex-col gap-5 px-5 md:px-8 pt-[100px] pb-10 md:pt-[110px]">
           <p className="text-[0.6rem] tracking-[0.12em] text-[#888] uppercase">
             <Link href="/shop" className="hover:text-[#2222FF] transition-colors">Shop</Link>
@@ -71,14 +73,25 @@ export default function TurbinePage() {
           <p className="text-[0.7rem] leading-[2] text-[#888]">Designed and fabricated by YET.</p>
         </div>
 
-        <div className="md:col-span-3 relative min-h-[50vh] md:min-h-full">
+        <div className="md:col-span-2 relative min-h-[50vh] md:min-h-full">
           <Img
             src="/images/shop/ramkol-1/Firefly_Gemini Flash (7).png"
-            alt="TURBINE Floor Speaker by YET:FAB"
+            alt="TURBINE Floor Speaker by YET:FAB — front view"
             fill
             className="object-contain"
             priority
-            sizes="(max-width: 768px) 100vw, 75vw"
+            sizes="(max-width: 768px) 100vw, 40vw"
+          />
+        </div>
+
+        <div className="md:col-span-2 relative min-h-[50vh] md:min-h-full">
+          <Img
+            src="/images/shop/ramkol-1/Firefly_Gemini Flash (2)2.png"
+            alt="TURBINE Floor Speaker by YET:FAB — side view"
+            fill
+            className="object-contain"
+            priority
+            sizes="(max-width: 768px) 100vw, 40vw"
           />
         </div>
       </section>
@@ -203,8 +216,9 @@ export default function TurbinePage() {
         <div className="flex flex-col items-start md:items-end gap-5">
           <div className="md:text-right">
             <p className="text-[0.58rem] tracking-[0.14em] text-[#888] uppercase mb-1">Price</p>
-            <p className="text-[2rem] font-thin text-[#0A0A0A] leading-none">On inquiry</p>
-            <p className="text-[0.58rem] tracking-[0.1em] text-[#888] mt-1">Made to order · Lead time on inquiry</p>
+            <p className="text-[2rem] font-thin text-[#0A0A0A] leading-none">₪13,500</p>
+            <p className="text-[0.72rem] font-thin text-[#888] leading-none mt-1">€390</p>
+            <p className="text-[0.58rem] tracking-[0.1em] text-[#888] mt-2">Made to order · Lead time on inquiry</p>
           </div>
           <Link
             href="/shop/turbine/order"
