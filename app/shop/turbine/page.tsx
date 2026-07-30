@@ -24,7 +24,6 @@ const GALLERY = [
   { src: "/images/shop/ramkol-1/Firefly_Gemini Flash (1)2.png", alt: "TURBINE speaker — detail of 3D-printed shell", ratio: "3/4" },
   { src: "/images/shop/ramkol-1/Firefly_Gemini Flash (1)33.png", alt: "TURBINE speaker — side profile", ratio: "3/4" },
   { src: "/images/shop/ramkol-1/Firefly_Gemini Flash (2).png", alt: "TURBINE speaker — atmospheric interior scene", ratio: "3/4" },
-  { src: "/images/shop/ramkol-1/Firefly_Gemini Flash (2)2.png", alt: "TURBINE speaker — full-height view", ratio: "3/4" },
   { src: "/images/shop/ramkol-1/Firefly_Gemini Flash11.png", alt: "TURBINE speaker — stainless-steel base detail", ratio: "3/4" },
 ];
 
