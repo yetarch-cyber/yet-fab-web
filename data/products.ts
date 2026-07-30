@@ -56,14 +56,14 @@ export const products: Product[] = [
   },
   {
     id: "ramkol-1",
-    name: "RAMKOL",
-    prefix: "Speaker",
-    displayName: '"RAMKOL"',
-    type: "Speaker",
+    name: "TURBINE",
+    prefix: "Floor speaker",
+    displayName: '"TURBINE"',
+    type: "Floor speaker",
     description:
-      "3D-printed speaker with sculptural form. Where sound design meets experimental fabrication.",
-    image: "/images/shop/Firefly_Gemini Flash (1).png",
-    shopUrl: "#",
+      "Sculptural 2-way floor-standing speaker system with 3D-printed acoustic enclosures and brushed stainless-steel structure.",
+    image: "/images/shop/ramkol-1/Firefly_Gemini Flash (7).png",
+    shopUrl: "/shop/turbine",
   },
   {
     id: "ramkol-2",
