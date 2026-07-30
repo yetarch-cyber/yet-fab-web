@@ -177,7 +177,7 @@ export default function TurbineOrderPage() {
             {sending ? "SENDING…" : "SEND INQUIRY"}
           </button>
           <p className="text-[0.58rem] text-[#888] leading-[1.8]">
-            Price: ₪13,500 / €390 per unit. No payment required now — we will confirm all details including delivery before any charge is made.
+            Price: ₪13,500 / €3,900 per unit. No payment required now — we will confirm all details including delivery before any charge is made.
           </p>
         </div>
       </form>

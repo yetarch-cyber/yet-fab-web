@@ -216,7 +216,7 @@ export default function TurbinePage() {
           <div className="md:text-right">
             <p className="text-[0.58rem] tracking-[0.14em] text-[#888] uppercase mb-1">Price</p>
             <p className="text-[2rem] font-thin text-[#0A0A0A] leading-none">₪13,500</p>
-            <p className="text-[0.72rem] font-thin text-[#888] leading-none mt-1">€390</p>
+            <p className="text-[0.72rem] font-thin text-[#888] leading-none mt-1">€3,900</p>
             <p className="text-[0.58rem] tracking-[0.1em] text-[#888] mt-2">Made to order · Lead time on inquiry</p>
           </div>
           <Link
