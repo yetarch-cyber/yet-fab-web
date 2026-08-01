@@ -84,7 +84,7 @@ export const products: Product[] = [
     type: "Table lamp",
     description:
       "Double-layer 3D-printed table lamp — translucent outer shell with warm orange inner core glow.",
-    image: "/images/shop/backlan/Firefly_Gemini Flash_here is images of 3d printed lamp. outer translucent layer with thick plastic layers  881560.png",
+    image: "/images/shop/backlan/backlan-hero.png",
     shopUrl: "/shop/backlan",
   },
   {

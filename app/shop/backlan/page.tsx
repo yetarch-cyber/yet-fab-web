@@ -14,15 +14,15 @@ export const metadata: Metadata = {
     title: "BACKLAN Table Lamp — 3D-Printed Lamp with Warm Core Glow | YET:FAB",
     description:
       "3D-printed double-layer table lamp with translucent PLA shell and warm orange inner core glow. Made to order in Tel Aviv by YET:FAB.",
-    images: [{ url: "/images/shop/backlan/ChatGPT Image Jul 26, 2026, 12_54_58 PM.png", alt: "BACKLAN Table Lamp by YET:FAB" }],
+    images: [{ url: "/images/shop/backlan/backlan-photo.png", alt: "BACKLAN Table Lamp by YET:FAB" }],
   },
 };
 
 const GALLERY = [
-  { src: "/images/shop/backlan/Firefly_Gemini Flash_here are 5 images of 3d printed lamp. outer translucent layer with thick plastic laye 477.png", alt: "BACKLAN lamp — translucent shell glowing warm", ratio: "3/4" },
-  { src: "/images/shop/backlan/Firefly_Gemini Flash_here are 5 images of 3d printed lamp. outer translucent layer with thick plastic laye 507119.png", alt: "BACKLAN lamp — orange inner core visible", ratio: "3/4" },
-  { src: "/images/shop/backlan/Firefly_Gemini Flash_here are images of 3d printed lamp. outer translucent layer with thick plastic layers 520919.png", alt: "BACKLAN lamp — warm ambient light", ratio: "3/4" },
-  { src: "/images/shop/backlan/Firefly_Gemini Flash_here is image of 3d printed lamp. outer translucent layer with thick plastic layers a 178268.png", alt: "BACKLAN lamp — lit detail", ratio: "3/4" },
+  { src: "/images/shop/backlan/backlan-render-1.png", alt: "BACKLAN lamp — translucent shell glowing warm", ratio: "3/4" },
+  { src: "/images/shop/backlan/backlan-render-2.png", alt: "BACKLAN lamp — orange inner core visible", ratio: "3/4" },
+  { src: "/images/shop/backlan/backlan-render-3.png", alt: "BACKLAN lamp — warm ambient light", ratio: "3/4" },
+  { src: "/images/shop/backlan/backlan-render-4.png", alt: "BACKLAN lamp — lit detail", ratio: "3/4" },
 ];
 
 export default function BacklanPage() {
@@ -37,7 +37,7 @@ export default function BacklanPage() {
             name: "BACKLAN Table Lamp",
             description:
               "3D-printed double-layer table lamp with translucent PLA shell and warm orange inner core glow. Made to order in Tel Aviv by YET:FAB.",
-            image: "https://www.yet-fab.com/images/shop/backlan/ChatGPT Image Jul 26, 2026, 12_54_58 PM.png",
+            image: "https://www.yet-fab.com/images/shop/backlan/backlan-photo.png",
             brand: { "@type": "Brand", name: "YET:FAB" },
             offers: {
               "@type": "Offer",
@@ -72,7 +72,7 @@ export default function BacklanPage() {
 
         <div className="relative min-h-[60vh] md:min-h-0 overflow-hidden">
           <Img
-            src="/images/shop/backlan/Firefly_Gemini Flash_here is images of 3d printed lamp. outer translucent layer with thick plastic layers  881560.png"
+            src="/images/shop/backlan/backlan-hero.png"
             alt="BACKLAN Table Lamp by YET:FAB — translucent shell with warm core"
             fill
             className="object-cover"
@@ -133,7 +133,7 @@ export default function BacklanPage() {
         {/* Right: lamp image */}
         <div className="relative w-full" style={{ aspectRatio: "3/4" }}>
           <Img
-            src="/images/shop/backlan/ChatGPT Image Jul 26, 2026, 12_54_58 PM.png"
+            src="/images/shop/backlan/backlan-photo.png"
             alt="BACKLAN Table Lamp — warm orange glow"
             fill
             className="object-cover"
