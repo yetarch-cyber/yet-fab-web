@@ -4,15 +4,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  async redirects() {
-    return [
-      {
-        source: "/yet.contact",
-        destination: "/contact",
-        permanent: true,
-      },
-    ];
-  },
   async headers() {
     return [
       {
