@@ -4,18 +4,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  async redirects() {
-    return [
-      { source: "/yet.contact", destination: "/contact", permanent: true },
-      { source: "/12/", destination: "/", permanent: true },
-      { source: "/10/", destination: "/", permanent: true },
-      {
-        source: "/alherdfloorlampscuturallightingbyyetfab/",
-        destination: "/shop/alherd-floor",
-        permanent: true,
-      },
-    ];
-  },
   async headers() {
     return [
       {
