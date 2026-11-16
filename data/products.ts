@@ -7,6 +7,8 @@ export type Product = {
   description: string;
   image: string;
   shopUrl: string;
+  priceNIS?: string;
+  priceEUR?: string;
 };
 
 export const products: Product[] = [
@@ -31,6 +33,7 @@ export const products: Product[] = [
       "Organic pendant lamp with a sculptural translucent shell. Warm diffused light through a flowing form.",
     image: "/images/shop/250829_YET_Lamp_0144_ik_F.jpg",
     shopUrl: "/shop/alherd-pendant",
+    priceNIS: "₪6,700",
   },
   {
     id: "alherd-table",
@@ -42,6 +45,7 @@ export const products: Product[] = [
       "Compact table lamp with a perforated mineral-like shell. Organic form, warm presence.",
     image: "/images/shop/250829_YET_Lamp_0231_ik_F.jpg",
     shopUrl: "/shop/alherd-table",
+    priceNIS: "₪480",
   },
   {
     id: "alherd-floor",
@@ -53,6 +57,7 @@ export const products: Product[] = [
       "3D-printed floor lamp with organic perforated structure. Warm light filters through the latticed shell.",
     image: "/images/shop/YET_10_2 (1) copy.jpg",
     shopUrl: "/shop/alherd-floor",
+    priceNIS: "₪6,600",
   },
   {
     id: "ramkol-1",
@@ -64,6 +69,8 @@ export const products: Product[] = [
       "Sculptural 2-way floor-standing speaker system with 3D-printed acoustic enclosures and brushed stainless-steel structure.",
     image: "/images/shop/ramkol-1/Firefly_Gemini Flash (7).png",
     shopUrl: "/shop/turbine",
+    priceNIS: "₪13,500",
+    priceEUR: "€3,900",
   },
   {
     id: "ramkol-2",
@@ -75,6 +82,8 @@ export const products: Product[] = [
       "Suspended 2-way speaker system with 3D-printed acoustic enclosures and brushed stainless-steel ceiling structure.",
     image: "/images/shop/ramkol-2/Firefly_Gemini Flash (1)34.png",
     shopUrl: "/shop/turbine-ceiling",
+    priceNIS: "₪12,500",
+    priceEUR: "€3,600",
   },
   {
     id: "baklan",
@@ -86,6 +95,8 @@ export const products: Product[] = [
       "Double-layer 3D-printed table lamp — translucent outer shell with warm orange inner core glow.",
     image: "/images/shop/backlan/backlan-hero.png",
     shopUrl: "/shop/backlan",
+    priceNIS: "₪260",
+    priceEUR: "€75",
   },
   {
     id: "thick",
@@ -97,5 +108,6 @@ export const products: Product[] = [
       "Structural lattice candleholder. Bold, architectural form in matte white ceramic-finish resin.",
     image: "/images/shop/thick/240523_candleholder_0085_ik_F.jpg",
     shopUrl: "/shop/thick",
+    priceNIS: "₪190",
   },
 ];

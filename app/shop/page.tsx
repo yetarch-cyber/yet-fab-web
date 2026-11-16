@@ -54,14 +54,23 @@ export default function ShopPage() {
 
               {/* Info */}
               <div className="flex flex-col items-center gap-[50px] py-5 px-4 text-center">
-                <p className="text-[0.62rem] tracking-[0.06em]">
-                  {product.prefix && (
-                    <span className="text-[#888]">{product.prefix} </span>
+                <div className="flex flex-col items-center gap-1">
+                  <p className="text-[0.62rem] tracking-[0.06em]">
+                    {product.prefix && (
+                      <span className="text-[#888]">{product.prefix} </span>
+                    )}
+                    <span className="font-bold text-[#0A0A0A]">
+                      {product.displayName}
+                    </span>
+                  </p>
+                  {product.priceNIS ? (
+                    <p className="text-[0.56rem] tracking-[0.06em] text-[#888]">
+                      {product.priceNIS}{product.priceEUR ? ` / ${product.priceEUR}` : ""}
+                    </p>
+                  ) : (
+                    <p className="text-[0.56rem] tracking-[0.06em] text-[#888] italic">Price on inquiry</p>
                   )}
-                  <span className="font-bold text-[#0A0A0A]">
-                    {product.displayName}
-                  </span>
-                </p>
+                </div>
                 <Link
                   href={product.shopUrl}
                   className="bg-[#2222FF] text-white text-[0.56rem] tracking-[0.16em] uppercase px-5 py-2 rounded-full hover:opacity-90 transition-opacity"
