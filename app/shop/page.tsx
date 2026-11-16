@@ -4,7 +4,7 @@ import Img from "@/components/Img";
 import { products } from "@/data/products";
 
 export const metadata: Metadata = {
-  title: "Shop — Designer 3D-Printed Lamps & Objects | YET:FAB",
+  title: "Shop — Designer 3D-Printed Lamps & Objects",
   description:
     "Shop designer 3D-printed lamps and objects by YET:FAB — ALHERD pendant, table and floor lamps, THICK candleholders, PARASITE sculptural objects. Made to order in Tel Aviv.",
   alternates: { canonical: "https://www.yet-fab.com/shop" },
@@ -16,6 +16,12 @@ export const metadata: Metadata = {
     description:
       "Shop designer 3D-printed lamps and objects by YET:FAB — ALHERD pendant, table and floor lamps, THICK candleholders, PARASITE sculptural objects. Made to order in Tel Aviv.",
     images: [{ url: "/og.jpg", alt: "YET:FAB shop — designer 3D-printed objects" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shop — Designer 3D-Printed Lamps & Objects | YET:FAB",
+    description: "Shop designer 3D-printed lamps and objects by YET:FAB — ALHERD pendant, table and floor lamps, THICK candleholders, PARASITE sculptural objects. Made to order in Tel Aviv.",
+    images: ["/og.jpg"],
   },
 };
 

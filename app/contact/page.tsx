@@ -7,6 +7,20 @@ export const metadata: Metadata = {
   description:
     "Contact YET:FAB — Tel Aviv. studio@yetarchitecture.com · +972-58-629-7943",
   alternates: { canonical: "https://www.yet-fab.com/contact" },
+  openGraph: {
+    type: "website",
+    url: "https://www.yet-fab.com/contact",
+    siteName: "YET:FAB",
+    title: "Contact — YET:FAB, Tel Aviv",
+    description: "Contact YET:FAB — Tel Aviv. studio@yetarchitecture.com · +972-58-629-7943",
+    images: [{ url: "/og.jpg", alt: "YET:FAB — Digital Fabrication Studio Tel Aviv" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact — YET:FAB, Tel Aviv",
+    description: "Contact YET:FAB — Tel Aviv. studio@yetarchitecture.com · +972-58-629-7943",
+    images: ["/og.jpg"],
+  },
 };
 
 export default function ContactPage() {

@@ -16,6 +16,12 @@ export const metadata: Metadata = {
       "THICK by YET:FAB — a 3D-printed sculptural candleholder in transparent PETG. Organic amorphic form, metal cup insert, fits standard candles. Made to order in Tel Aviv. ₪190.",
     images: [{ url: "/images/shop/thick/240523_candleholder_0085_ik_F.jpg", alt: "THICK candleholder by YET:FAB" }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "THICK Candleholder — 3D-Printed Sculptural Object | YET:FAB",
+    description: "THICK by YET:FAB — a 3D-printed sculptural candleholder in transparent PETG. Organic amorphic form, metal cup insert, fits standard candles. Made to order in Tel Aviv. ₪190.",
+    images: ["/images/shop/thick/240523_candleholder_0085_ik_F.jpg"],
+  },
 };
 
 const GALLERY = [
@@ -32,6 +38,26 @@ const GALLERY = [
 export default function ThickPage() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "THICK Candleholder",
+            description: "3D-printed sculptural candleholder in transparent PETG. Organic amorphic form, metal cup insert, fits standard candles including IKEA sizes. Made to order in Tel Aviv by YET:FAB.",
+            image: "https://www.yet-fab.com/images/shop/thick/240523_candleholder_0085_ik_F.jpg",
+            brand: { "@type": "Brand", name: "YET:FAB" },
+            offers: {
+              "@type": "Offer",
+              price: "190",
+              priceCurrency: "ILS",
+              availability: "https://schema.org/InStock",
+              url: "https://www.yet-fab.com/shop/thick",
+            },
+          }),
+        }}
+      />
       {/* Hero: 1 col text + 3 col image */}
       <section className="grid grid-cols-1 md:grid-cols-4 min-h-screen">
         <div className="flex flex-col gap-5 px-5 md:px-8 pt-[100px] pb-10 md:pt-[110px]">

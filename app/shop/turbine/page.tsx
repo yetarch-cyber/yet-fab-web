@@ -3,7 +3,7 @@ import Link from "next/link";
 import Img from "@/components/Img";
 
 export const metadata: Metadata = {
-  title: "TURBINE Speaker — Designer 3D-Printed Floor Speaker | YET:FAB",
+  title: "TURBINE Speaker — Designer 3D-Printed Floor Speaker",
   description:
     "Buy the TURBINE Floor Speaker by YET:FAB — a sculptural 2-way floor-standing speaker system with 3D-printed acoustic enclosures and brushed stainless-steel structure. Made to order in Tel Aviv.",
   alternates: { canonical: "https://www.yet-fab.com/shop/turbine" },
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     description:
       "Sculptural 2-way floor-standing speaker system with 3D-printed acoustic enclosures and brushed stainless-steel structure. Made to order in Tel Aviv by YET:FAB.",
     images: [{ url: "/images/shop/ramkol-1/Firefly_Gemini Flash (7).png", alt: "TURBINE Floor Speaker by YET:FAB" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "TURBINE Speaker — Designer 3D-Printed Floor Speaker | YET:FAB",
+    description: "Sculptural 2-way floor-standing speaker system with 3D-printed acoustic enclosures and brushed stainless-steel structure. Made to order in Tel Aviv by YET:FAB.",
+    images: ["/images/shop/ramkol-1/Firefly_Gemini Flash (7).png"],
   },
 };
 

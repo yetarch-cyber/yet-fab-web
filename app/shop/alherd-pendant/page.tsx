@@ -3,7 +3,7 @@ import Link from "next/link";
 import Img from "@/components/Img";
 
 export const metadata: Metadata = {
-  title: "ALHERD Pendant Lamp — Designer 3D-Printed Lighting | YET:FAB",
+  title: "ALHERD Pendant Lamp — Designer 3D-Printed Lighting",
   description:
     "Buy the ALHERD Pendant Lamp by YET:FAB — an organic sculptural pendant light 3D-printed in Tel Aviv. Translucent PETG shell, integrated LED, 130 cm, natural or gradient finish. Made to order. ₪6,700.",
   alternates: { canonical: "https://www.yet-fab.com/shop/alherd-pendant" },
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     description:
       "Buy the ALHERD Pendant Lamp by YET:FAB — an organic sculptural pendant light 3D-printed in Tel Aviv. Translucent PETG shell, integrated LED, 130 cm. Made to order. ₪6,700.",
     images: [{ url: "/images/shop-preview/250829_YET_Lamp_0144_ik_F.jpg", alt: "ALHERD Pendant Lamp by YET:FAB" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ALHERD Pendant Lamp — Designer 3D-Printed Lighting | YET:FAB",
+    description: "Buy the ALHERD Pendant Lamp by YET:FAB — an organic sculptural pendant light 3D-printed in Tel Aviv. Translucent PETG shell, integrated LED, 130 cm. Made to order. ₪6,700.",
+    images: ["/images/shop-preview/250829_YET_Lamp_0144_ik_F.jpg"],
   },
 };
 

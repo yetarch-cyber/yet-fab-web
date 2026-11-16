@@ -3,7 +3,7 @@ import Link from "next/link";
 import Img from "@/components/Img";
 
 export const metadata: Metadata = {
-  title: "BACKLAN Table Lamp — 3D-Printed Lamp with Warm Core Glow | YET:FAB",
+  title: "BACKLAN Table Lamp — 3D-Printed Lamp with Warm Core Glow",
   description:
     "Buy the BACKLAN Table Lamp by YET:FAB — a 3D-printed double-layer lamp with translucent PLA shell and warm orange inner core. Made to order in Tel Aviv. From ₪260 / €75.",
   alternates: { canonical: "https://www.yet-fab.com/shop/backlan" },
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     description:
       "3D-printed double-layer table lamp with translucent PLA shell and warm orange inner core glow. Made to order in Tel Aviv by YET:FAB.",
     images: [{ url: "/images/shop/backlan/backlan-photo.png", alt: "BACKLAN Table Lamp by YET:FAB" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BACKLAN Table Lamp — 3D-Printed Lamp with Warm Core Glow | YET:FAB",
+    description: "3D-printed double-layer table lamp with translucent PLA shell and warm orange inner core glow. Made to order in Tel Aviv by YET:FAB.",
+    images: ["/images/shop/backlan/backlan-photo.png"],
   },
 };
 

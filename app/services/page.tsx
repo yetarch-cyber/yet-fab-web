@@ -8,6 +8,20 @@ export const metadata: Metadata = {
   description:
     "YET:FAB services: 3D printing, bespoke digital fabrication, and expert consultation. From concept to production in Tel Aviv.",
   alternates: { canonical: "https://www.yet-fab.com/services" },
+  openGraph: {
+    type: "website",
+    url: "https://www.yet-fab.com/services",
+    siteName: "YET:FAB",
+    title: "3D Printing & Bespoke Fabrication Services | YET:FAB",
+    description: "YET:FAB services: 3D printing, bespoke digital fabrication, and expert consultation. From concept to production in Tel Aviv.",
+    images: [{ url: "/og.jpg", alt: "YET:FAB — Digital Fabrication Studio Tel Aviv" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "3D Printing & Bespoke Fabrication Services | YET:FAB",
+    description: "YET:FAB services: 3D printing, bespoke digital fabrication, and expert consultation. From concept to production in Tel Aviv.",
+    images: ["/og.jpg"],
+  },
 };
 
 export default function ServicesPage() {

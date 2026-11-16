@@ -3,7 +3,7 @@ import Link from "next/link";
 import Img from "@/components/Img";
 
 export const metadata: Metadata = {
-  title: "ALHERD Floor Lamp — Designer 3D-Printed Lighting | YET:FAB",
+  title: "ALHERD Floor Lamp — Designer 3D-Printed Lighting",
   description:
     "Buy the ALHERD Floor Lamp by YET:FAB — a vertical light sculpture 3D-printed in Tel Aviv. Translucent PETG, integrated LED, 130–160 cm, natural or gradient finish. Designer floor lamp made to order. ₪6,600.",
   alternates: { canonical: "https://www.yet-fab.com/shop/alherd-floor" },
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     description:
       "Buy the ALHERD Floor Lamp by YET:FAB — a vertical light sculpture 3D-printed in Tel Aviv. Translucent PETG, integrated LED, 130–160 cm. Designer floor lamp made to order. ₪6,600.",
     images: [{ url: "/images/shop/alherd-floor/250829_YET_Lamp_0098_ik_F.jpg", alt: "ALHERD Floor Lamp by YET:FAB" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ALHERD Floor Lamp — Designer 3D-Printed Lighting | YET:FAB",
+    description: "Buy the ALHERD Floor Lamp by YET:FAB — a vertical light sculpture 3D-printed in Tel Aviv. Translucent PETG, integrated LED, 130–160 cm. Designer floor lamp made to order. ₪6,600.",
+    images: ["/images/shop/alherd-floor/250829_YET_Lamp_0098_ik_F.jpg"],
   },
 };
 

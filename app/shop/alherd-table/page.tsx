@@ -3,7 +3,7 @@ import Link from "next/link";
 import Img from "@/components/Img";
 
 export const metadata: Metadata = {
-  title: "ALHERD Table Lamp — Designer 3D-Printed Lighting | YET:FAB",
+  title: "ALHERD Table Lamp — Designer 3D-Printed Lighting",
   description:
     "Buy the ALHERD Table Lamp by YET:FAB — a compact sculptural table lamp 3D-printed in Tel Aviv. Organic translucent PETG form, warm diffused light, choice of cable colour. Designer table lamp made to order. ₪480.",
   alternates: { canonical: "https://www.yet-fab.com/shop/alherd-table" },
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     description:
       "Buy the ALHERD Table Lamp by YET:FAB — a compact sculptural table lamp 3D-printed in Tel Aviv. Organic translucent PETG form, warm diffused light. Made to order. ₪480.",
     images: [{ url: "/images/shop/250829_YET_Lamp_0231_ik_F.jpg", alt: "ALHERD Table Lamp by YET:FAB" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ALHERD Table Lamp — Designer 3D-Printed Lighting | YET:FAB",
+    description: "Buy the ALHERD Table Lamp by YET:FAB — a compact sculptural table lamp 3D-printed in Tel Aviv. Organic translucent PETG form, warm diffused light. Made to order. ₪480.",
+    images: ["/images/shop/250829_YET_Lamp_0231_ik_F.jpg"],
   },
 };
 

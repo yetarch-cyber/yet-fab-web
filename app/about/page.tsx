@@ -6,6 +6,20 @@ export const metadata: Metadata = {
   description:
     "YET:FAB is the fabrication studio of YET Architecture — an experimental practice creating 3D-printed objects, lighting, and custom components in Tel Aviv.",
   alternates: { canonical: "https://www.yet-fab.com/about" },
+  openGraph: {
+    type: "website",
+    url: "https://www.yet-fab.com/about",
+    siteName: "YET:FAB",
+    title: "About — Digital Fabrication Studio, Tel Aviv | YET:FAB",
+    description: "YET:FAB is the fabrication studio of YET Architecture — an experimental practice creating 3D-printed objects, lighting, and custom components in Tel Aviv.",
+    images: [{ url: "/og.jpg", alt: "YET:FAB — Digital Fabrication Studio Tel Aviv" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About — Digital Fabrication Studio, Tel Aviv | YET:FAB",
+    description: "YET:FAB is the fabrication studio of YET Architecture — an experimental practice creating 3D-printed objects, lighting, and custom components in Tel Aviv.",
+    images: ["/og.jpg"],
+  },
 };
 
 export default function AboutPage() {

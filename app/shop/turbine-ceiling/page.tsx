@@ -3,7 +3,7 @@ import Link from "next/link";
 import Img from "@/components/Img";
 
 export const metadata: Metadata = {
-  title: "TURBINE Ceiling Speaker — Designer 3D-Printed Suspended Speaker | YET:FAB",
+  title: "TURBINE Ceiling Speaker — Designer 3D-Printed Suspended Speaker",
   description:
     "Buy the TURBINE Ceiling Speaker by YET:FAB — a suspended 2-way speaker system with 3D-printed acoustic enclosures and brushed stainless-steel structure. Made to order in Tel Aviv.",
   alternates: { canonical: "https://www.yet-fab.com/shop/turbine-ceiling" },
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     description:
       "Suspended 2-way speaker system with 3D-printed acoustic enclosures and brushed stainless-steel structure. Made to order in Tel Aviv by YET:FAB.",
     images: [{ url: "/images/shop/ramkol-2/Firefly_Gemini Flash (1)34.png", alt: "TURBINE Ceiling Speaker by YET:FAB" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "TURBINE Ceiling Speaker — Designer 3D-Printed Suspended Speaker | YET:FAB",
+    description: "Suspended 2-way speaker system with 3D-printed acoustic enclosures and brushed stainless-steel structure. Made to order in Tel Aviv by YET:FAB.",
+    images: ["/images/shop/ramkol-2/Firefly_Gemini Flash (1)34.png"],
   },
 };
 

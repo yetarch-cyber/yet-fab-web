@@ -16,6 +16,12 @@ export const metadata: Metadata = {
       "PARASITE by YET:FAB & Binderman Architects — custom 3D-printed sculptural additions that attach to mass-produced furniture, transforming it into a unique piece.",
     images: [{ url: "/images/shop/parasite/241005_YET_0129_ik copy.jpg", alt: "PARASITE by YET:FAB" }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "PARASITE — Bespoke 3D-Printed Furniture Interventions | YET:FAB",
+    description: "PARASITE by YET:FAB & Binderman Architects — custom 3D-printed sculptural additions that attach to mass-produced furniture, transforming it into a unique piece.",
+    images: ["/images/shop/parasite/241005_YET_0129_ik copy.jpg"],
+  },
 };
 
 const GALLERY = [
@@ -64,6 +70,24 @@ const GALLERY = [
 export default function ParasitePage() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "PARASITE",
+            description: "Bespoke 3D-printed sculptural additions by YET:FAB & Binderman Architects that attach to mass-produced furniture, transforming it into a unique piece. Made to order.",
+            image: "https://www.yet-fab.com/images/shop/parasite/241005_YET_0129_ik copy.jpg",
+            brand: { "@type": "Brand", name: "YET:FAB" },
+            offers: {
+              "@type": "Offer",
+              availability: "https://schema.org/InStock",
+              url: "https://www.yet-fab.com/shop/parasite",
+            },
+          }),
+        }}
+      />
       {/* First section: 1 col text + 3 col image */}
       <section className="grid grid-cols-1 md:grid-cols-4 md:h-[1080px]">
         {/* Col 1: name + description */}
