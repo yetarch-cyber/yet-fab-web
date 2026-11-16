@@ -34,6 +34,7 @@ export const products: Product[] = [
     image: "/images/shop/250829_YET_Lamp_0144_ik_F.jpg",
     shopUrl: "/shop/alherd-pendant",
     priceNIS: "₪6,700",
+    priceEUR: "€1,900",
   },
   {
     id: "alherd-table",
@@ -46,6 +47,7 @@ export const products: Product[] = [
     image: "/images/shop/250829_YET_Lamp_0231_ik_F.jpg",
     shopUrl: "/shop/alherd-table",
     priceNIS: "₪480",
+    priceEUR: "€140",
   },
   {
     id: "alherd-floor",
@@ -58,6 +60,7 @@ export const products: Product[] = [
     image: "/images/shop/YET_10_2 (1) copy.jpg",
     shopUrl: "/shop/alherd-floor",
     priceNIS: "₪6,600",
+    priceEUR: "€1,900",
   },
   {
     id: "ramkol-1",
@@ -109,5 +112,6 @@ export const products: Product[] = [
     image: "/images/shop/thick/240523_candleholder_0085_ik_F.jpg",
     shopUrl: "/shop/thick",
     priceNIS: "₪190",
+    priceEUR: "€55",
   },
 ];

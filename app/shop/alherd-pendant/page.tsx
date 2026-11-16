@@ -248,6 +248,7 @@ export default function AlherdPendantPage() {
             <p className="text-[2.5rem] font-thin text-[#0A0A0A] leading-none">
               ₪6,700
             </p>
+            <p className="text-[0.72rem] font-thin text-[#888] leading-none mt-1">€1,900</p>
             <p className="text-[0.58rem] tracking-[0.1em] text-[#888] mt-1">
               Made to order · Lead time on inquiry
             </p>
